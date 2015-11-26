@@ -738,3 +738,2239 @@ Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 11:44:59 
   [1m[35m (0.2ms)[0m  begin transaction
   [1m[36mSQL (0.4ms)[0m  [1mUPDATE "produtos" SET "nome" = ?, "updated_at" = ? WHERE "produtos"."id" = 4[0m  [["nome", "Bermuda 10/10"], ["updated_at", "2015-11-26 13:54:39.016940"]]
   [1m[35m (48.9ms)[0m  commit transaction
+
+
+Started GET "/produtos" for 127.0.0.1 at 2015-11-26 11:59:19 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.3ms)[0m  SELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."nome" ASC LIMIT 5
+  [1m[36mProduto Load (0.3ms)[0m  [1mSELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."preco" ASC LIMIT 2[0m
+  Rendered produtos/index.html within layouts/application (11.9ms)
+Completed 200 OK in 78ms (Views: 67.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 11:59:19 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 11:59:19 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 11:59:19 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 11:59:19 -0200
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 11:59:19 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 11:59:19 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 11:59:19 -0200
+
+
+Started GET "/produtos" for 127.0.0.1 at 2015-11-26 12:57:02 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.3ms)[0m  SELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."nome" ASC LIMIT 5
+  [1m[36mProduto Load (0.2ms)[0m  [1mSELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."preco" ASC LIMIT 2[0m
+  Rendered produtos/index.html within layouts/application (7.1ms)
+Completed 200 OK in 67ms (Views: 57.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 12:57:03 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 12:57:03 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 12:57:03 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 12:57:03 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 12:57:03 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 12:57:03 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 12:57:03 -0200
+
+
+Started GET "/produtos" for 127.0.0.1 at 2015-11-26 12:58:48 -0200
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.2ms)[0m  SELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."nome" ASC LIMIT 5
+  [1m[36mProduto Load (0.1ms)[0m  [1mSELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."preco" ASC LIMIT 2[0m
+  Rendered produtos/index.html within layouts/application (1.3ms)
+Completed 200 OK in 33ms (Views: 32.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 12:58:48 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:48 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:48 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:48 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 12:58:48 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:48 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:48 -0200
+
+
+Started GET "/produtos" for 127.0.0.1 at 2015-11-26 12:58:49 -0200
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.3ms)[0m  SELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."nome" ASC LIMIT 5
+  [1m[36mProduto Load (0.2ms)[0m  [1mSELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."preco" ASC LIMIT 2[0m
+  Rendered produtos/index.html within layouts/application (1.9ms)
+Completed 200 OK in 32ms (Views: 31.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 12:58:49 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 12:58:49 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:49 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:49 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:49 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:49 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:49 -0200
+
+
+Started GET "/produtos" for 127.0.0.1 at 2015-11-26 12:58:49 -0200
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.2ms)[0m  SELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."nome" ASC LIMIT 5
+  [1m[36mProduto Load (0.2ms)[0m  [1mSELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."preco" ASC LIMIT 2[0m
+  Rendered produtos/index.html within layouts/application (1.4ms)
+Completed 200 OK in 57ms (Views: 56.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 12:58:49 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 12:58:49 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:49 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:49 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:49 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:49 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:49 -0200
+
+
+Started GET "/produtos" for 127.0.0.1 at 2015-11-26 12:58:49 -0200
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.2ms)[0m  SELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."nome" ASC LIMIT 5
+  [1m[36mProduto Load (0.1ms)[0m  [1mSELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."preco" ASC LIMIT 2[0m
+  Rendered produtos/index.html within layouts/application (1.2ms)
+Completed 200 OK in 36ms (Views: 35.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 12:58:49 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 12:58:49 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:49 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:49 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:49 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:49 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:49 -0200
+
+
+Started GET "/produtos" for 127.0.0.1 at 2015-11-26 12:58:50 -0200
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.2ms)[0m  SELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."nome" ASC LIMIT 5
+  [1m[36mProduto Load (0.1ms)[0m  [1mSELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."preco" ASC LIMIT 2[0m
+  Rendered produtos/index.html within layouts/application (1.2ms)
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 12:58:50 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:50 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:50 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 12:58:50 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:50 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:50 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:50 -0200
+
+
+Started GET "/produtos" for 127.0.0.1 at 2015-11-26 12:58:50 -0200
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.2ms)[0m  SELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."nome" ASC LIMIT 5
+  [1m[36mProduto Load (0.1ms)[0m  [1mSELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."preco" ASC LIMIT 2[0m
+  Rendered produtos/index.html within layouts/application (1.2ms)
+Completed 200 OK in 38ms (Views: 37.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 12:58:50 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:50 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:50 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 12:58:50 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:50 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:50 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:50 -0200
+
+
+Started GET "/produtos" for 127.0.0.1 at 2015-11-26 12:58:50 -0200
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.2ms)[0m  SELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."nome" ASC LIMIT 5
+  [1m[36mProduto Load (0.2ms)[0m  [1mSELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."preco" ASC LIMIT 2[0m
+  Rendered produtos/index.html within layouts/application (1.4ms)
+Completed 200 OK in 30ms (Views: 29.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 12:58:50 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 12:58:50 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:50 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:50 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:50 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:50 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:50 -0200
+
+
+Started GET "/produtos" for 127.0.0.1 at 2015-11-26 12:58:51 -0200
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.2ms)[0m  SELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."nome" ASC LIMIT 5
+  [1m[36mProduto Load (0.2ms)[0m  [1mSELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."preco" ASC LIMIT 2[0m
+  Rendered produtos/index.html within layouts/application (1.5ms)
+Completed 200 OK in 32ms (Views: 30.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 12:58:51 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:51 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:51 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 12:58:51 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:51 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:51 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:51 -0200
+
+
+Started GET "/produtos" for 127.0.0.1 at 2015-11-26 12:58:51 -0200
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.2ms)[0m  SELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."nome" ASC LIMIT 5
+  [1m[36mProduto Load (0.1ms)[0m  [1mSELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."preco" ASC LIMIT 2[0m
+  Rendered produtos/index.html within layouts/application (2.5ms)
+Completed 200 OK in 41ms (Views: 40.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 12:58:51 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:51 -0200
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 12:58:51 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:51 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:51 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:51 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:51 -0200
+
+
+Started GET "/produtos" for 127.0.0.1 at 2015-11-26 12:58:51 -0200
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.2ms)[0m  SELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."nome" ASC LIMIT 5
+  [1m[36mProduto Load (0.1ms)[0m  [1mSELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."preco" ASC LIMIT 2[0m
+  Rendered produtos/index.html within layouts/application (1.4ms)
+Completed 200 OK in 33ms (Views: 32.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 12:58:51 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:51 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:51 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 12:58:51 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:51 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:51 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:51 -0200
+
+
+Started GET "/produtos" for 127.0.0.1 at 2015-11-26 12:58:51 -0200
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.2ms)[0m  SELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."nome" ASC LIMIT 5
+  [1m[36mProduto Load (0.2ms)[0m  [1mSELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."preco" ASC LIMIT 2[0m
+  Rendered produtos/index.html within layouts/application (1.9ms)
+Completed 200 OK in 36ms (Views: 34.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 12:58:52 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 12:58:52 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:52 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:52 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:52 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:52 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:52 -0200
+
+
+Started GET "/produtos" for 127.0.0.1 at 2015-11-26 12:58:52 -0200
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.2ms)[0m  SELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."nome" ASC LIMIT 5
+  [1m[36mProduto Load (0.1ms)[0m  [1mSELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."preco" ASC LIMIT 2[0m
+  Rendered produtos/index.html within layouts/application (1.1ms)
+Completed 200 OK in 37ms (Views: 35.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 12:58:52 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:52 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 12:58:52 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:52 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:52 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:52 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:52 -0200
+
+
+Started GET "/produtos" for 127.0.0.1 at 2015-11-26 12:58:52 -0200
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.2ms)[0m  SELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."nome" ASC LIMIT 5
+  [1m[36mProduto Load (0.2ms)[0m  [1mSELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."preco" ASC LIMIT 2[0m
+  Rendered produtos/index.html within layouts/application (1.4ms)
+Completed 200 OK in 33ms (Views: 32.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 12:58:52 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 12:58:52 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:52 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:52 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:52 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:52 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:52 -0200
+
+
+Started GET "/produtos" for 127.0.0.1 at 2015-11-26 12:58:52 -0200
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.2ms)[0m  SELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."nome" ASC LIMIT 5
+  [1m[36mProduto Load (0.1ms)[0m  [1mSELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."preco" ASC LIMIT 2[0m
+  Rendered produtos/index.html within layouts/application (1.3ms)
+Completed 200 OK in 32ms (Views: 31.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 12:58:52 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:52 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:52 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:52 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 12:58:52 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:52 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 12:58:52 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-26 12:59:59 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /var/lib/gems/2.1.0/gems/railties-4.1.10/lib/rails/templates/rails/welcome/index.html.erb (1.2ms)
+Completed 200 OK in 12ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/produtos" for 127.0.0.1 at 2015-11-26 13:00:05 -0200
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.4ms)[0m  SELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."nome" ASC LIMIT 5
+  [1m[36mProduto Load (0.3ms)[0m  [1mSELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."preco" ASC LIMIT 2[0m
+  Rendered produtos/index.html within layouts/application (12.1ms)
+Completed 200 OK in 78ms (Views: 74.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:05 -0200
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:05 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:05 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:05 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:05 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:05 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:05 -0200
+
+
+Started GET "/produtos" for 127.0.0.1 at 2015-11-26 13:00:34 -0200
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.2ms)[0m  SELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."nome" ASC LIMIT 5
+  [1m[36mProduto Load (0.1ms)[0m  [1mSELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."preco" ASC LIMIT 2[0m
+  Rendered produtos/index.html within layouts/application (1.3ms)
+Completed 200 OK in 34ms (Views: 33.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:34 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:34 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:34 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:34 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:34 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:34 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:34 -0200
+
+
+Started GET "/produtos" for 127.0.0.1 at 2015-11-26 13:00:42 -0200
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.2ms)[0m  SELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."nome" ASC LIMIT 5
+  [1m[36mProduto Load (0.2ms)[0m  [1mSELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."preco" ASC LIMIT 2[0m
+  Rendered produtos/index.html within layouts/application (1.8ms)
+Completed 200 OK in 33ms (Views: 31.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:42 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:42 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:42 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:42 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:42 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:42 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:42 -0200
+
+
+Started GET "/produtos" for 127.0.0.1 at 2015-11-26 13:00:42 -0200
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.2ms)[0m  SELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."nome" ASC LIMIT 5
+  [1m[36mProduto Load (0.2ms)[0m  [1mSELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."preco" ASC LIMIT 2[0m
+  Rendered produtos/index.html within layouts/application (1.8ms)
+Completed 200 OK in 57ms (Views: 56.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:42 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:42 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:42 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:42 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:42 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:42 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:42 -0200
+
+
+Started GET "/produtos" for 127.0.0.1 at 2015-11-26 13:00:42 -0200
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.3ms)[0m  SELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."nome" ASC LIMIT 5
+  [1m[36mProduto Load (0.2ms)[0m  [1mSELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."preco" ASC LIMIT 2[0m
+  Rendered produtos/index.html within layouts/application (2.3ms)
+Completed 200 OK in 36ms (Views: 35.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:42 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:42 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:42 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:42 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:42 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:42 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:42 -0200
+
+
+Started GET "/produtos" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.3ms)[0m  SELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."nome" ASC LIMIT 5
+  [1m[36mProduto Load (0.2ms)[0m  [1mSELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."preco" ASC LIMIT 2[0m
+  Rendered produtos/index.html within layouts/application (2.0ms)
+Completed 200 OK in 37ms (Views: 35.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+
+
+Started GET "/produtos" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.2ms)[0m  SELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."nome" ASC LIMIT 5
+  [1m[36mProduto Load (0.2ms)[0m  [1mSELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."preco" ASC LIMIT 2[0m
+  Rendered produtos/index.html within layouts/application (1.9ms)
+Completed 200 OK in 42ms (Views: 40.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+
+
+Started GET "/produtos" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.2ms)[0m  SELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."nome" ASC LIMIT 5
+  [1m[36mProduto Load (0.2ms)[0m  [1mSELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."preco" ASC LIMIT 2[0m
+  Rendered produtos/index.html within layouts/application (1.8ms)
+Completed 200 OK in 38ms (Views: 37.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+
+
+Started GET "/produtos" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.3ms)[0m  SELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."nome" ASC LIMIT 5
+  [1m[36mProduto Load (0.2ms)[0m  [1mSELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."preco" ASC LIMIT 2[0m
+  Rendered produtos/index.html within layouts/application (2.8ms)
+Completed 200 OK in 39ms (Views: 38.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+
+
+Started GET "/produtos" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.2ms)[0m  SELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."nome" ASC LIMIT 5
+  [1m[36mProduto Load (0.2ms)[0m  [1mSELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."preco" ASC LIMIT 2[0m
+  Rendered produtos/index.html within layouts/application (1.9ms)
+Completed 200 OK in 43ms (Views: 41.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+
+
+Started GET "/produtos" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.3ms)[0m  SELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."nome" ASC LIMIT 5
+  [1m[36mProduto Load (0.2ms)[0m  [1mSELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."preco" ASC LIMIT 2[0m
+  Rendered produtos/index.html within layouts/application (1.9ms)
+Completed 200 OK in 40ms (Views: 38.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+
+
+Started GET "/produtos" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.3ms)[0m  SELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."nome" ASC LIMIT 5
+  [1m[36mProduto Load (0.2ms)[0m  [1mSELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."preco" ASC LIMIT 2[0m
+  Rendered produtos/index.html within layouts/application (1.8ms)
+Completed 200 OK in 36ms (Views: 34.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+
+
+Started GET "/produtos" for 127.0.0.1 at 2015-11-26 13:00:43 -0200
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.2ms)[0m  SELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."nome" ASC LIMIT 5
+  [1m[36mProduto Load (0.4ms)[0m  [1mSELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."preco" ASC LIMIT 2[0m
+  Rendered produtos/index.html within layouts/application (2.5ms)
+Completed 200 OK in 47ms (Views: 46.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:44 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:44 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:44 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:44 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:44 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:44 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:44 -0200
+
+
+Started GET "/produtos" for 127.0.0.1 at 2015-11-26 13:00:44 -0200
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.2ms)[0m  SELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."nome" ASC LIMIT 5
+  [1m[36mProduto Load (0.1ms)[0m  [1mSELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."preco" ASC LIMIT 2[0m
+  Rendered produtos/index.html within layouts/application (1.4ms)
+Completed 200 OK in 37ms (Views: 36.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:44 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:44 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:44 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:44 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:44 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:44 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:44 -0200
+
+
+Started GET "/produtos" for 127.0.0.1 at 2015-11-26 13:00:44 -0200
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.2ms)[0m  SELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."nome" ASC LIMIT 5
+  [1m[36mProduto Load (0.2ms)[0m  [1mSELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."preco" ASC LIMIT 2[0m
+  Rendered produtos/index.html within layouts/application (1.8ms)
+Completed 200 OK in 39ms (Views: 37.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:44 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:44 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:44 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:44 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:44 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:44 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:44 -0200
+
+
+Started GET "/produtos" for 127.0.0.1 at 2015-11-26 13:00:44 -0200
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.2ms)[0m  SELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."nome" ASC LIMIT 5
+  [1m[36mProduto Load (0.2ms)[0m  [1mSELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."preco" ASC LIMIT 2[0m
+  Rendered produtos/index.html within layouts/application (1.5ms)
+Completed 200 OK in 45ms (Views: 43.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:44 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:44 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:44 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:44 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:44 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:44 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:44 -0200
+
+
+Started GET "/produtos" for 127.0.0.1 at 2015-11-26 13:00:44 -0200
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.4ms)[0m  SELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."nome" ASC LIMIT 5
+  [1m[36mProduto Load (0.7ms)[0m  [1mSELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."preco" ASC LIMIT 2[0m
+  Rendered produtos/index.html within layouts/application (3.9ms)
+Completed 200 OK in 34ms (Views: 32.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:44 -0200
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:44 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:44 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:44 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:44 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:44 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:44 -0200
+
+
+Started GET "/produtos" for 127.0.0.1 at 2015-11-26 13:00:44 -0200
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.2ms)[0m  SELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."nome" ASC LIMIT 5
+  [1m[36mProduto Load (0.1ms)[0m  [1mSELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."preco" ASC LIMIT 2[0m
+  Rendered produtos/index.html within layouts/application (1.3ms)
+Completed 200 OK in 32ms (Views: 30.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:44 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:44 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:44 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:44 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:44 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:44 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:44 -0200
+
+
+Started GET "/produtos" for 127.0.0.1 at 2015-11-26 13:00:45 -0200
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.2ms)[0m  SELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."nome" ASC LIMIT 5
+  [1m[36mProduto Load (0.1ms)[0m  [1mSELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."preco" ASC LIMIT 2[0m
+  Rendered produtos/index.html within layouts/application (1.2ms)
+Completed 200 OK in 36ms (Views: 35.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:45 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:45 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:45 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:45 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:45 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:45 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:45 -0200
+
+
+Started GET "/produtos" for 127.0.0.1 at 2015-11-26 13:00:45 -0200
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.2ms)[0m  SELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."nome" ASC LIMIT 5
+  [1m[36mProduto Load (0.1ms)[0m  [1mSELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."preco" ASC LIMIT 2[0m
+  Rendered produtos/index.html within layouts/application (1.2ms)
+Completed 200 OK in 34ms (Views: 33.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:45 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:45 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:45 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:45 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:45 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:45 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:45 -0200
+
+
+Started GET "/produtos" for 127.0.0.1 at 2015-11-26 13:00:45 -0200
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.2ms)[0m  SELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."nome" ASC LIMIT 5
+  [1m[36mProduto Load (0.3ms)[0m  [1mSELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."preco" ASC LIMIT 2[0m
+  Rendered produtos/index.html within layouts/application (1.8ms)
+Completed 200 OK in 31ms (Views: 30.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:45 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:45 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:45 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:45 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:45 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:45 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:45 -0200
+
+
+Started GET "/produtos" for 127.0.0.1 at 2015-11-26 13:00:45 -0200
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.3ms)[0m  SELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."nome" ASC LIMIT 5
+  [1m[36mProduto Load (0.2ms)[0m  [1mSELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."preco" ASC LIMIT 2[0m
+  Rendered produtos/index.html within layouts/application (2.3ms)
+Completed 200 OK in 41ms (Views: 39.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:45 -0200
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:45 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:45 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:45 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:45 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:45 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:45 -0200
+
+
+Started GET "/produtos" for 127.0.0.1 at 2015-11-26 13:00:45 -0200
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.2ms)[0m  SELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."nome" ASC LIMIT 5
+  [1m[36mProduto Load (0.2ms)[0m  [1mSELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."preco" ASC LIMIT 2[0m
+  Rendered produtos/index.html within layouts/application (1.8ms)
+Completed 200 OK in 35ms (Views: 34.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:45 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:45 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:45 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:45 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:45 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:45 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:45 -0200
+
+
+Started GET "/produtos" for 127.0.0.1 at 2015-11-26 13:00:45 -0200
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.3ms)[0m  SELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."nome" ASC LIMIT 5
+  [1m[36mProduto Load (0.1ms)[0m  [1mSELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."preco" ASC LIMIT 2[0m
+  Rendered produtos/index.html within layouts/application (1.8ms)
+Completed 200 OK in 33ms (Views: 30.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:46 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:46 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:46 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:46 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:46 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:46 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:46 -0200
+
+
+Started GET "/produtos" for 127.0.0.1 at 2015-11-26 13:00:46 -0200
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.3ms)[0m  SELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."nome" ASC LIMIT 5
+  [1m[36mProduto Load (0.2ms)[0m  [1mSELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."preco" ASC LIMIT 2[0m
+  Rendered produtos/index.html within layouts/application (2.0ms)
+Completed 200 OK in 38ms (Views: 37.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:46 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:46 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:46 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:46 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:46 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:46 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:46 -0200
+
+
+Started GET "/produtos" for 127.0.0.1 at 2015-11-26 13:00:46 -0200
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.3ms)[0m  SELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."nome" ASC LIMIT 5
+  [1m[36mProduto Load (0.2ms)[0m  [1mSELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."preco" ASC LIMIT 2[0m
+  Rendered produtos/index.html within layouts/application (2.0ms)
+Completed 200 OK in 34ms (Views: 33.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:46 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:46 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:46 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:46 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:46 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:46 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:46 -0200
+
+
+Started GET "/produtos" for 127.0.0.1 at 2015-11-26 13:00:46 -0200
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.2ms)[0m  SELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."nome" ASC LIMIT 5
+  [1m[36mProduto Load (0.1ms)[0m  [1mSELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."preco" ASC LIMIT 2[0m
+  Rendered produtos/index.html within layouts/application (1.4ms)
+Completed 200 OK in 36ms (Views: 35.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:46 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 13:00:46 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:46 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:46 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:46 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:46 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 13:00:46 -0200
+
+
+Started GET "/produtos" for 127.0.0.1 at 2015-11-26 13:01:01 -0200
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.5ms)[0m  SELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."nome" ASC LIMIT 5
+  [1m[36mProduto Load (0.2ms)[0m  [1mSELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."preco" ASC LIMIT 2[0m
+  Rendered produtos/index.html within layouts/application (3.1ms)
+Completed 200 OK in 49ms (Views: 47.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 13:01:01 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 13:01:01 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 13:01:01 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 13:01:01 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 13:01:01 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 13:01:01 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 13:01:01 -0200
+
+
+Started GET "/produtos" for 127.0.0.1 at 2015-11-26 13:01:11 -0200
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.2ms)[0m  SELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."nome" ASC LIMIT 5
+  [1m[36mProduto Load (0.2ms)[0m  [1mSELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."preco" ASC LIMIT 2[0m
+  Rendered produtos/index.html within layouts/application (1.5ms)
+Completed 200 OK in 32ms (Views: 31.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 13:01:11 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 13:01:11 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 13:01:11 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 13:01:11 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 13:01:11 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 13:01:11 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 13:01:11 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-26 13:01:14 -0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /var/lib/gems/2.1.0/gems/railties-4.1.10/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/produtos" for 127.0.0.1 at 2015-11-26 13:01:26 -0200
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (1.1ms)[0m  SELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."nome" ASC LIMIT 5
+  [1m[36mProduto Load (0.2ms)[0m  [1mSELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."preco" ASC LIMIT 2[0m
+  Rendered produtos/index.html within layouts/application (2.9ms)
+Completed 200 OK in 43ms (Views: 41.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 13:01:26 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 13:01:26 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 13:01:26 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 13:01:26 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 13:01:26 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 13:01:26 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 13:01:26 -0200
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:28:45 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.1.10) lib/active_record/migration.rb:389:in `check_pending!'
+  activerecord (4.1.10) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.10) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.10) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.10) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.10) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.10) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.10) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.10) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.10) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.10) lib/rails/engine.rb:514:in `call'
+  railties (4.1.10) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.8ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsuarios (20151126162827)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "usuarios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "usuario" varchar(255), "senha" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151126162827"]]
+  [1m[36m (88.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:29:09 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios"
+  Rendered usuarios/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 652ms (Views: 642.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 14:29:10 -0200
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2015-11-26 14:29:10 -0200
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2015-11-26 14:29:10 -0200
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 14:29:10 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 14:29:10 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 14:29:10 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 14:29:10 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 14:29:10 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 14:29:10 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 14:29:10 -0200
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:31:01 -0200
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"[0m
+  Rendered usuarios/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 45ms (Views: 43.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:01 -0200
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:01 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:01 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:01 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:01 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:01 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:01 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:01 -0200
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:01 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:01 -0200
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:31:24 -0200
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (0.4ms)[0m  SELECT "usuarios".* FROM "usuarios"
+  Rendered usuarios/index.html.erb within layouts/application (31.9ms)
+Completed 200 OK in 74ms (Views: 71.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:24 -0200
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:24 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:24 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:24 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:24 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:24 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:24 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:24 -0200
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:24 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:24 -0200
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:31:25 -0200
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"[0m
+  Rendered usuarios/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 41ms (Views: 39.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:25 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:25 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:25 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:25 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:25 -0200
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:25 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:25 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:25 -0200
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:25 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:25 -0200
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:31:25 -0200
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios"
+  Rendered usuarios/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 49ms (Views: 48.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:25 -0200
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:25 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:25 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:25 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:25 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:25 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:25 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:25 -0200
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:25 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:25 -0200
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:31:25 -0200
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"[0m
+  Rendered usuarios/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 39ms (Views: 38.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:25 -0200
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:25 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:25 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:25 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:25 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:25 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:25 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:25 -0200
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:25 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:25 -0200
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:31:25 -0200
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT "usuarios".* FROM "usuarios"
+  Rendered usuarios/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 50ms (Views: 48.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:25 -0200
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:25 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:25 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:25 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:25 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:25 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:25 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:25 -0200
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:25 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:25 -0200
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:31:33 -0200
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"[0m
+  Rendered usuarios/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 40ms (Views: 39.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:33 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:33 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:34 -0200
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:34 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:34 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:34 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:34 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:34 -0200
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:34 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:34 -0200
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:31:34 -0200
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (0.3ms)[0m  SELECT "usuarios".* FROM "usuarios"
+  Rendered usuarios/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 72ms (Views: 70.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:34 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:34 -0200
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:34 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:34 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:34 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:34 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:34 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:34 -0200
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:34 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:34 -0200
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:31:34 -0200
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"[0m
+  Rendered usuarios/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 45ms (Views: 44.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:34 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:34 -0200
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:34 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:34 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:34 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:34 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:34 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:34 -0200
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:34 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:34 -0200
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:31:34 -0200
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT "usuarios".* FROM "usuarios"
+  Rendered usuarios/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 49ms (Views: 48.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:34 -0200
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:34 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:34 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:34 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:34 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:34 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:34 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:34 -0200
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:34 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:34 -0200
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:31:35 -0200
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"[0m
+  Rendered usuarios/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 41ms (Views: 40.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:35 -0200
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:35 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:35 -0200
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:35 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:35 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:35 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:35 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:35 -0200
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:35 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:35 -0200
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:31:49 -0200
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT "usuarios".* FROM "usuarios"
+  Rendered usuarios/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 51ms (Views: 49.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:49 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:49 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:49 -0200
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:49 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:49 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:49 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:49 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:49 -0200
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:49 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:49 -0200
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:31:50 -0200
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (0.3ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"[0m
+  Rendered usuarios/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 76ms (Views: 74.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:50 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:50 -0200
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:50 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 14:31:50 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:50 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:50 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:50 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:50 -0200
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:50 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 14:31:50 -0200
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:32:00 -0200
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios"
+  Rendered usuarios/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 51ms (Views: 50.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 14:32:00 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 14:32:00 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 14:32:00 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 14:32:00 -0200
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2015-11-26 14:32:00 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 14:32:00 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 14:32:00 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 14:32:00 -0200
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2015-11-26 14:32:00 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 14:32:00 -0200
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:32:34 -0200
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"[0m
+  Rendered usuarios/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 47ms (Views: 45.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 14:32:34 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 14:32:34 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 14:32:34 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 14:32:34 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 14:32:34 -0200
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2015-11-26 14:32:34 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 14:32:34 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 14:32:34 -0200
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2015-11-26 14:32:34 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 14:32:34 -0200
+
+
+Started GET "/produtos" for 127.0.0.1 at 2015-11-26 14:33:37 -0200
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.2ms)[0m  SELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."nome" ASC LIMIT 5
+  [1m[36mProduto Load (0.3ms)[0m  [1mSELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."preco" ASC LIMIT 2[0m
+  Rendered produtos/index.html within layouts/application (7.6ms)
+Completed 200 OK in 55ms (Views: 52.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 14:33:37 -0200
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2015-11-26 14:33:37 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 14:33:37 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 14:33:37 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 14:33:37 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 14:33:37 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 14:33:37 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 14:33:37 -0200
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2015-11-26 14:33:37 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 14:33:37 -0200
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:34:09 -0200
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios"
+  Rendered usuarios/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 40ms (Views: 38.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 14:34:09 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 14:34:09 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 14:34:09 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 14:34:09 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 14:34:09 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 14:34:09 -0200
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2015-11-26 14:34:09 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 14:34:09 -0200
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2015-11-26 14:34:09 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 14:34:09 -0200
+
+
+Started GET "/usuarios/new" for 127.0.0.1 at 2015-11-26 14:34:11 -0200
+Processing by UsuariosController#new as HTML
+  Rendered usuarios/_form.html.erb (49.2ms)
+  Rendered usuarios/new.html.erb within layouts/application (99.0ms)
+Completed 200 OK in 149ms (Views: 145.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:34:13 -0200
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"[0m
+  Rendered usuarios/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 40ms (Views: 39.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/usuarios/new" for 127.0.0.1 at 2015-11-26 14:34:25 -0200
+Processing by UsuariosController#new as HTML
+  Rendered usuarios/_form.html.erb (1.5ms)
+  Rendered usuarios/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 50ms (Views: 49.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usuarios" for 127.0.0.1 at 2015-11-26 14:34:30 -0200
+Processing by UsuariosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T8Hk61Ysq+cbMz0fP9kxhlObtYImtApyRmsVn+jxkAY=", "usuario"=>{"usuario"=>"Lucas", "senha"=>"220295"}, "commit"=>"Create Usuario"}
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "senha", "updated_at", "usuario") VALUES (?, ?, ?, ?)[0m  [["created_at", "2015-11-26 16:34:30.544295"], ["senha", "220295"], ["updated_at", "2015-11-26 16:34:30.544295"], ["usuario", "Lucas"]]
+  [1m[35m (103.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/usuarios/1
+Completed 302 Found in 155ms (ActiveRecord: 104.7ms)
+
+
+Started GET "/usuarios/1" for 127.0.0.1 at 2015-11-26 14:34:30 -0200
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT  "usuarios".* FROM "usuarios"  WHERE "usuarios"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered usuarios/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 41ms (Views: 39.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 14:34:30 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 14:34:30 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 14:34:30 -0200
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2015-11-26 14:34:30 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 14:34:30 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 14:34:30 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 14:34:30 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 14:34:30 -0200
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2015-11-26 14:34:30 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 14:34:30 -0200
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:34:37 -0200
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios"
+  Rendered usuarios/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 45ms (Views: 44.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:34:58 -0200
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"[0m
+  Rendered usuarios/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 44ms (Views: 42.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 14:34:58 -0200
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2015-11-26 14:34:58 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 14:34:58 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 14:34:58 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 14:34:58 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 14:34:58 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 14:34:58 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 14:34:58 -0200
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2015-11-26 14:34:58 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 14:34:58 -0200
+
+
+Started GET "/usuarios/new" for 127.0.0.1 at 2015-11-26 14:36:39 -0200
+Processing by UsuariosController#new as HTML
+  Rendered usuarios/_form.html.erb (1.5ms)
+  Rendered usuarios/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 43ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/new" for 127.0.0.1 at 2015-11-26 14:37:30 -0200
+Processing by UsuariosController#new as HTML
+  Rendered usuarios/_form.html.erb (50.1ms)
+  Rendered usuarios/new.html.erb within layouts/application (51.0ms)
+Completed 200 OK in 91ms (Views: 90.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 14:37:30 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 14:37:30 -0200
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2015-11-26 14:37:30 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 14:37:30 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 14:37:30 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 14:37:30 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 14:37:30 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 14:37:30 -0200
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2015-11-26 14:37:30 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 14:37:30 -0200
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:37:42 -0200
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios"
+  Rendered usuarios/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 38ms (Views: 37.0ms | ActiveRecord: 0.1ms)
