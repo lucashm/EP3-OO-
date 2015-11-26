@@ -2974,3 +2974,1435 @@ Processing by UsuariosController#index as HTML
   [1m[35mUsuario Load (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios"
   Rendered usuarios/index.html.erb within layouts/application (1.1ms)
 Completed 200 OK in 38ms (Views: 37.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/produtos" for 127.0.0.1 at 2015-11-26 14:41:43 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProdutosController#index as HTML
+  [1m[35mProduto Load (0.2ms)[0m  SELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."nome" ASC LIMIT 5
+  [1m[36mProduto Load (0.2ms)[0m  [1mSELECT  "produtos".* FROM "produtos"   ORDER BY "produtos"."preco" ASC LIMIT 2[0m
+  Rendered produtos/index.html within layouts/application (8.9ms)
+Completed 200 OK in 88ms (Views: 78.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 14:41:44 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 14:41:44 -0200
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2015-11-26 14:41:44 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 14:41:44 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 14:41:44 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 14:41:44 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 14:41:44 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 14:41:44 -0200
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2015-11-26 14:41:44 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 14:41:44 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-26 14:41:46 -0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /var/lib/gems/2.1.0/gems/railties-4.1.10/lib/rails/templates/rails/welcome/index.html.erb (1.0ms)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:43:09 -0200
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT "usuarios".* FROM "usuarios"
+  Rendered usuarios/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 47ms (Views: 45.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 14:43:09 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 14:43:09 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 14:43:09 -0200
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2015-11-26 14:43:09 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 14:43:09 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 14:43:09 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 14:43:09 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 14:43:09 -0200
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2015-11-26 14:43:09 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 14:43:09 -0200
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:44:18 -0200
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"[0m
+  Rendered usuarios/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 66ms (Views: 65.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 14:44:18 -0200
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2015-11-26 14:44:18 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 14:44:18 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 14:44:18 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 14:44:18 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 14:44:18 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 14:44:18 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 14:44:18 -0200
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2015-11-26 14:44:19 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 14:44:19 -0200
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:47:04 -0200
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT "usuarios".* FROM "usuarios"
+  Rendered usuarios/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 51ms (Views: 49.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 14:47:04 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 14:47:04 -0200
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2015-11-26 14:47:04 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 14:47:04 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 14:47:04 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 14:47:04 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 14:47:04 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 14:47:04 -0200
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2015-11-26 14:47:04 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 14:47:04 -0200
+
+
+Started GET "/usuarios/new" for 127.0.0.1 at 2015-11-26 14:47:07 -0200
+Processing by UsuariosController#new as HTML
+  Rendered usuarios/_form.html.erb (11.0ms)
+  Rendered usuarios/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 64ms (Views: 63.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:47:08 -0200
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"[0m
+  Rendered usuarios/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 41ms (Views: 40.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:47:52 -0200
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (0.4ms)[0m  SELECT "usuarios".* FROM "usuarios"
+  Rendered usuarios/index.html.erb within layouts/application (24.0ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x0000000619ef00>:0x00000005970810>):
+    21:   <%= link_to 'Cadastrar', new_usuario_path %>
+    22: 
+    23:   <div class="field">
+    24:     <%= f.label :usuario %><br>
+    25:     <%= f.text_field :usuario %>
+    26:   </div>
+    27:   <div class="field">
+  app/views/usuarios/index.html.erb:24:in `_app_views_usuarios_index_html_erb___4175476082486620620_46889320'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.4ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:48:12 -0200
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"[0m
+  Rendered usuarios/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 48ms (Views: 47.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 14:48:12 -0200
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 14:48:12 -0200
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2015-11-26 14:48:12 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 14:48:12 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 14:48:12 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 14:48:12 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 14:48:12 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 14:48:12 -0200
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2015-11-26 14:48:12 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 14:48:12 -0200
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:48:43 -0200
+Processing by UsuariosController#index as HTML
+  Rendered usuarios/index.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/lucas/Desktop/EP3/app/views/usuarios/index.html.erb:33: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/lucas/Desktop/EP3/app/views/usuarios/index.html.erb:35: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/usuarios/index.html.erb:33: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/usuarios/index.html.erb:35: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.2ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:48:52 -0200
+Processing by UsuariosController#index as HTML
+  Rendered usuarios/index.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/lucas/Desktop/EP3/app/views/usuarios/index.html.erb:33: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/lucas/Desktop/EP3/app/views/usuarios/index.html.erb:35: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/usuarios/index.html.erb:33: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/usuarios/index.html.erb:35: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.2ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:48:53 -0200
+Processing by UsuariosController#index as HTML
+  Rendered usuarios/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/lucas/Desktop/EP3/app/views/usuarios/index.html.erb:33: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/lucas/Desktop/EP3/app/views/usuarios/index.html.erb:35: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/usuarios/index.html.erb:33: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/usuarios/index.html.erb:35: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.5ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:48:53 -0200
+Processing by UsuariosController#index as HTML
+  Rendered usuarios/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/lucas/Desktop/EP3/app/views/usuarios/index.html.erb:33: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/lucas/Desktop/EP3/app/views/usuarios/index.html.erb:35: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/usuarios/index.html.erb:33: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/usuarios/index.html.erb:35: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.7ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:48:53 -0200
+Processing by UsuariosController#index as HTML
+  Rendered usuarios/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/lucas/Desktop/EP3/app/views/usuarios/index.html.erb:33: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/lucas/Desktop/EP3/app/views/usuarios/index.html.erb:35: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/usuarios/index.html.erb:33: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/usuarios/index.html.erb:35: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.6ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:48:54 -0200
+Processing by UsuariosController#index as HTML
+  Rendered usuarios/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/lucas/Desktop/EP3/app/views/usuarios/index.html.erb:33: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/lucas/Desktop/EP3/app/views/usuarios/index.html.erb:35: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/usuarios/index.html.erb:33: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/usuarios/index.html.erb:35: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.4ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:48:54 -0200
+Processing by UsuariosController#index as HTML
+  Rendered usuarios/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/lucas/Desktop/EP3/app/views/usuarios/index.html.erb:33: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/lucas/Desktop/EP3/app/views/usuarios/index.html.erb:35: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/usuarios/index.html.erb:33: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/usuarios/index.html.erb:35: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.8ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:48:54 -0200
+Processing by UsuariosController#index as HTML
+  Rendered usuarios/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/lucas/Desktop/EP3/app/views/usuarios/index.html.erb:33: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/lucas/Desktop/EP3/app/views/usuarios/index.html.erb:35: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/usuarios/index.html.erb:33: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/usuarios/index.html.erb:35: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.1ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:49:01 -0200
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (0.4ms)[0m  SELECT "usuarios".* FROM "usuarios"
+  Rendered usuarios/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 64ms (Views: 61.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 14:49:01 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 14:49:01 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 14:49:01 -0200
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2015-11-26 14:49:01 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 14:49:01 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 14:49:01 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 14:49:01 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 14:49:01 -0200
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2015-11-26 14:49:01 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 14:49:01 -0200
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:49:13 -0200
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (0.3ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"[0m
+  Rendered usuarios/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 49ms (Views: 47.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 14:49:13 -0200
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2015-11-26 14:49:13 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 14:49:13 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 14:49:13 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 14:49:13 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 14:49:13 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 14:49:13 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 14:49:13 -0200
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2015-11-26 14:49:13 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 14:49:13 -0200
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:49:19 -0200
+Processing by UsuariosController#index as HTML
+  Rendered usuarios/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/lucas/Desktop/EP3/app/views/usuarios/index.html.erb:36: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/lucas/Desktop/EP3/app/views/usuarios/index.html.erb:38: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/usuarios/index.html.erb:36: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/usuarios/index.html.erb:38: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.2ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:49:40 -0200
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios"
+  Rendered usuarios/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 41ms (Views: 40.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 14:49:40 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 14:49:40 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 14:49:40 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 14:49:40 -0200
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2015-11-26 14:49:40 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 14:49:40 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 14:49:40 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 14:49:40 -0200
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2015-11-26 14:49:40 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 14:49:40 -0200
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:49:45 -0200
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"[0m
+  Rendered usuarios/index.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    20: <br>
+    21:   <%= link_to 'Cadastrar', new_usuario_path %>
+    22: 
+    23:   <%= form_for(@usuario) do |f| %>
+    24:     <% if @usuario.errors.any? %>
+    25:       <div id="error_explanation">
+    26:         <h2><%= pluralize(@usuario.errors.count, "error") %> prohibited this usuario from being saved:</h2>
+  app/views/usuarios/index.html.erb:23:in `_app_views_usuarios_index_html_erb___4175476082486620620_40448900'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.5ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:50:46 -0200
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (0.3ms)[0m  SELECT "usuarios".* FROM "usuarios"
+  Rendered usuarios/index.html.erb within layouts/application (26.0ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x0000000619ef00>:0x000000035f6358>):
+    21:   <%= link_to 'Cadastrar', new_usuario_path %>
+    22: 
+    23:   <div class="field">
+    24:     <%= f.label :usuario %><br>
+    25:     <%= f.text_field :usuario %>
+    26:   </div>
+    27:   <div class="field">
+  app/views/usuarios/index.html.erb:24:in `_app_views_usuarios_index_html_erb___4175476082486620620_28216240'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.5ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:50:55 -0200
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"[0m
+  Rendered usuarios/index.html.erb within layouts/application (14.1ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x0000000619ef00>:0x007faddc4ac220>):
+    21:   <%= link_to 'Cadastrar', new_usuario_path %>
+    22: 
+    23:   <div class="field">
+    24:     <%= f.label :get.usuario %><br>
+    25:     <%= f.text_field :get.usuario %>
+    26:   </div>
+    27:   <div class="field">
+  app/views/usuarios/index.html.erb:24:in `_app_views_usuarios_index_html_erb___4175476082486620620_70192350959220'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.5ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:51:10 -0200
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (0.8ms)[0m  SELECT "usuarios".* FROM "usuarios"
+  Rendered usuarios/index.html.erb within layouts/application (13.4ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.8ms)
+
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x0000000619ef00>:0x007faddc17abb0>):
+    21:   <%= link_to 'Cadastrar', new_usuario_path %>
+    22: 
+    23:   <div class="field">
+    24:     <%= f.label :usuario %><br>
+    25:     <%= f.text_field :get.usuario %>
+    26:   </div>
+    27:   <div class="field">
+  app/views/usuarios/index.html.erb:24:in `_app_views_usuarios_index_html_erb___4175476082486620620_70192349300260'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.0ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:51:15 -0200
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (0.3ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"[0m
+  Rendered usuarios/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 51ms (Views: 49.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 14:51:15 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 14:51:15 -0200
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2015-11-26 14:51:15 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 14:51:15 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 14:51:15 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 14:51:15 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 14:51:15 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 14:51:15 -0200
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2015-11-26 14:51:15 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 14:51:15 -0200
+
+
+Started GET "/usuarios/new" for 127.0.0.1 at 2015-11-26 14:51:17 -0200
+Processing by UsuariosController#new as HTML
+  Rendered usuarios/_form.html.erb (2.5ms)
+  Rendered usuarios/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 50ms (Views: 49.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:52:06 -0200
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios"
+  Rendered usuarios/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 40ms (Views: 38.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/usuarios/new" for 127.0.0.1 at 2015-11-26 14:52:07 -0200
+Processing by UsuariosController#new as HTML
+  Rendered usuarios/_form.html.erb (2.2ms)
+  Rendered usuarios/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 52ms (Views: 50.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios/new" for 127.0.0.1 at 2015-11-26 14:52:15 -0200
+Processing by UsuariosController#new as HTML
+  Rendered usuarios/_form.html.erb (3.4ms)
+  Rendered usuarios/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 48ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 14:52:15 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 14:52:15 -0200
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2015-11-26 14:52:15 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 14:52:15 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 14:52:15 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 14:52:15 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 14:52:15 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 14:52:15 -0200
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2015-11-26 14:52:15 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 14:52:15 -0200
+
+
+Started GET "/usuarios/new" for 127.0.0.1 at 2015-11-26 14:52:39 -0200
+Processing by UsuariosController#new as HTML
+  Rendered usuarios/_form.html.erb (3.6ms)
+  Rendered usuarios/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 59ms (Views: 57.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 14:52:39 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 14:52:39 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 14:52:39 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 14:52:39 -0200
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2015-11-26 14:52:39 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 14:52:39 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 14:52:39 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 14:52:39 -0200
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2015-11-26 14:52:39 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 14:52:39 -0200
+
+
+Started GET "/usuarios/new" for 127.0.0.1 at 2015-11-26 14:53:23 -0200
+Processing by UsuariosController#new as HTML
+  Rendered usuarios/_form.html.erb (3.7ms)
+  Rendered usuarios/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 50ms (Views: 49.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 14:53:23 -0200
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2015-11-26 14:53:23 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 14:53:23 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 14:53:23 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 14:53:23 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 14:53:23 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 14:53:23 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 14:53:23 -0200
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2015-11-26 14:53:23 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 14:53:23 -0200
+
+
+Started GET "/usuarios/new" for 127.0.0.1 at 2015-11-26 14:54:29 -0200
+Processing by UsuariosController#new as HTML
+  Rendered usuarios/_form.html.erb (2.1ms)
+  Rendered usuarios/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 49ms (Views: 48.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 14:54:29 -0200
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2015-11-26 14:54:29 -0200
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 14:54:29 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 14:54:29 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 14:54:29 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 14:54:29 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 14:54:29 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 14:54:29 -0200
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2015-11-26 14:54:29 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 14:54:29 -0200
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:54:31 -0200
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"[0m
+  Rendered usuarios/index.html.erb within layouts/application (9.3ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x0000000619ef00>:0x007faddc314610>):
+    21:   <%= link_to 'Cadastrar', new_usuario_path %>
+    22: 
+    23:   <div class="field">
+    24:     <%= f.label :usuário %><br>
+    25:     
+    26:   </div>
+  app/views/usuarios/index.html.erb:24:in `_app_views_usuarios_index_html_erb___4175476082486620620_70192350123620'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.1ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:54:31 -0200
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios"
+  Rendered usuarios/index.html.erb within layouts/application (8.4ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x0000000619ef00>:0x000000062a1970>):
+    21:   <%= link_to 'Cadastrar', new_usuario_path %>
+    22: 
+    23:   <div class="field">
+    24:     <%= f.label :usuário %><br>
+    25:     
+    26:   </div>
+  app/views/usuarios/index.html.erb:24:in `_app_views_usuarios_index_html_erb___4175476082486620620_51708100'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.6ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:55:14 -0200
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"[0m
+  Rendered usuarios/index.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (wrong number of arguments (1 for 2..4)):
+    21:   <%= link_to 'Cadastrar', new_usuario_path %>
+    22: 
+    23:   <div class="field">
+    24:     <%= label :usuário %><br>
+    25: 
+    26:   </div>
+  app/views/usuarios/index.html.erb:24:in `_app_views_usuarios_index_html_erb___4175476082486620620_49935960'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.6ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:56:07 -0200
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios"
+  Rendered usuarios/index.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    20: <br>
+    21:   <%= link_to 'Cadastrar', new_usuario_path %>
+    22: 
+    23:   <%= form_for(@usuario) do |f| %>
+    24:   <div class="field">
+    25:     <%= f.label :usuário %><br>
+    26: 
+  app/views/usuarios/index.html.erb:23:in `_app_views_usuarios_index_html_erb___4175476082486620620_48672000'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.3ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:56:08 -0200
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"[0m
+  Rendered usuarios/index.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    20: <br>
+    21:   <%= link_to 'Cadastrar', new_usuario_path %>
+    22: 
+    23:   <%= form_for(@usuario) do |f| %>
+    24:   <div class="field">
+    25:     <%= f.label :usuário %><br>
+    26: 
+  app/views/usuarios/index.html.erb:23:in `_app_views_usuarios_index_html_erb___4175476082486620620_48672000'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.3ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:56:08 -0200
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT "usuarios".* FROM "usuarios"
+  Rendered usuarios/index.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    20: <br>
+    21:   <%= link_to 'Cadastrar', new_usuario_path %>
+    22: 
+    23:   <%= form_for(@usuario) do |f| %>
+    24:   <div class="field">
+    25:     <%= f.label :usuário %><br>
+    26: 
+  app/views/usuarios/index.html.erb:23:in `_app_views_usuarios_index_html_erb___4175476082486620620_48672000'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.6ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:56:09 -0200
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"[0m
+  Rendered usuarios/index.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    20: <br>
+    21:   <%= link_to 'Cadastrar', new_usuario_path %>
+    22: 
+    23:   <%= form_for(@usuario) do |f| %>
+    24:   <div class="field">
+    25:     <%= f.label :usuário %><br>
+    26: 
+  app/views/usuarios/index.html.erb:23:in `_app_views_usuarios_index_html_erb___4175476082486620620_48672000'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.7ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:56:09 -0200
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios"
+  Rendered usuarios/index.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    20: <br>
+    21:   <%= link_to 'Cadastrar', new_usuario_path %>
+    22: 
+    23:   <%= form_for(@usuario) do |f| %>
+    24:   <div class="field">
+    25:     <%= f.label :usuário %><br>
+    26: 
+  app/views/usuarios/index.html.erb:23:in `_app_views_usuarios_index_html_erb___4175476082486620620_48672000'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.8ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 14:56:27 -0200
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"[0m
+  Rendered usuarios/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 39ms (Views: 38.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 14:56:27 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 14:56:27 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 14:56:27 -0200
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2015-11-26 14:56:27 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 14:56:27 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 14:56:27 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 14:56:27 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 14:56:27 -0200
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2015-11-26 14:56:27 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 14:56:27 -0200
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 15:00:41 -0200
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT "usuarios".* FROM "usuarios"
+  Rendered usuarios/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 53ms (Views: 50.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 15:00:41 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 15:00:41 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 15:00:41 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 15:00:41 -0200
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2015-11-26 15:00:41 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 15:00:41 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 15:00:41 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 15:00:41 -0200
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2015-11-26 15:00:41 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 15:00:41 -0200
+
+
+Started GET "/usuarios/new" for 127.0.0.1 at 2015-11-26 15:00:42 -0200
+Processing by UsuariosController#new as HTML
+  Rendered usuarios/_form.html.erb (3.1ms)
+  Rendered usuarios/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 45ms (Views: 44.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 15:00:45 -0200
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (0.3ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"[0m
+  Rendered usuarios/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 53ms (Views: 52.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/usuarios/new" for 127.0.0.1 at 2015-11-26 15:02:56 -0200
+Processing by UsuariosController#new as HTML
+  Rendered usuarios/_form.html.erb (1.5ms)
+  Rendered usuarios/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 41ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 15:04:05 -0200
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios"
+  Rendered usuarios/index.html.erb within layouts/application (7.9ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x0000000619ef00>:0x00000005ec2430>):
+    21:   <%= link_to 'Cadastrar', new_usuario_path %>
+    22: 
+    23:   <div class="field">
+    24:     <%= f.label :usuário %><br>
+    25:     <%= f.text_field :usuario %>
+    26:   </div>
+  app/views/usuarios/index.html.erb:24:in `_app_views_usuarios_index_html_erb___4175476082486620620_49678180'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.7ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 15:04:05 -0200
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"[0m
+  Rendered usuarios/index.html.erb within layouts/application (10.7ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x0000000619ef00>:0x00000005bc7fa0>):
+    21:   <%= link_to 'Cadastrar', new_usuario_path %>
+    22: 
+    23:   <div class="field">
+    24:     <%= f.label :usuário %><br>
+    25:     <%= f.text_field :usuario %>
+    26:   </div>
+  app/views/usuarios/index.html.erb:24:in `_app_views_usuarios_index_html_erb___4175476082486620620_48117120'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.2ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 15:04:36 -0200
+Processing by UsuariosController#index as HTML
+  Rendered usuarios/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/lucas/Desktop/EP3/app/views/usuarios/index.html.erb:29: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/lucas/Desktop/EP3/app/views/usuarios/index.html.erb:31: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/usuarios/index.html.erb:29: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/usuarios/index.html.erb:31: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.5ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 15:04:49 -0200
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT "usuarios".* FROM "usuarios"
+  Rendered usuarios/index.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    20: <br>
+    21:   <%= link_to 'Cadastrar', new_usuario_path %>
+    22: 
+    23:   <%= form_for(@usuario) do |f| %>
+    24:   <div class="field">
+    25:     <%= f.label :usuário %><br>
+    26:     <%= f.text_field :usuario %>
+  app/views/usuarios/index.html.erb:23:in `_app_views_usuarios_index_html_erb___4175476082486620620_38686060'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.1ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.3ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 15:05:55 -0200
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"[0m
+  Rendered usuarios/index.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `label' for #<Usuario:0x007faddc660648>):
+    22: 
+    23:   <% @usuarios.each do |f| %>
+    24:   <div class="field">
+    25:     <%= f.label :usuário %><br>
+    26:     <%= f.text_field :usuario %>
+    27:   </div>
+    28: <% end %>
+  app/views/usuarios/index.html.erb:25:in `block in _app_views_usuarios_index_html_erb___4175476082486620620_70192351895440'
+  app/views/usuarios/index.html.erb:23:in `_app_views_usuarios_index_html_erb___4175476082486620620_70192351895440'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.8ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 15:06:31 -0200
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (0.4ms)[0m  SELECT "usuarios".* FROM "usuarios"
+  Rendered usuarios/index.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (undefined method `model_name' for Usuario::ActiveRecord_Relation:Class):
+    20: <br>
+    21:   <%= link_to 'Cadastrar', new_usuario_path %>
+    22: 
+    23:   <%= form_for(@usuarios) do |f| %>
+    24:   <div class="field">
+    25:     <%= f.label :usuário %><br>
+    26:     <%= f.text_field :usuario %>
+  app/views/usuarios/index.html.erb:23:in `_app_views_usuarios_index_html_erb___4175476082486620620_70192350376200'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.9ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 15:06:38 -0200
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"[0m
+  Rendered usuarios/index.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    20: <br>
+    21:   <%= link_to 'Cadastrar', new_usuario_path %>
+    22: 
+    23:   <%= form_for(@usuario) do |f| %>
+    24:   <div class="field">
+    25:     <%= f.label :usuário %><br>
+    26:     <%= f.text_field :usuario %>
+  app/views/usuarios/index.html.erb:23:in `_app_views_usuarios_index_html_erb___4175476082486620620_70192348846600'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.7ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 15:09:54 -0200
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios"
+  Rendered usuarios/index.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    20: <br>
+    21:   <%= link_to 'Cadastrar', new_usuario_path %>
+    22: 
+    23:   <%= form_for(@usuario) do |f| %>
+    24:   <div class="form-group">
+    25:   
+    26:   </div>
+  app/views/usuarios/index.html.erb:23:in `_app_views_usuarios_index_html_erb___4175476082486620620_50668180'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.0ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 15:09:55 -0200
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"[0m
+  Rendered usuarios/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    20: <br>
+    21:   <%= link_to 'Cadastrar', new_usuario_path %>
+    22: 
+    23:   <%= form_for(@usuario) do |f| %>
+    24:   <div class="form-group">
+    25:   
+    26:   </div>
+  app/views/usuarios/index.html.erb:23:in `_app_views_usuarios_index_html_erb___4175476082486620620_50668180'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.1.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.5ms)
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 15:10:04 -0200
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (0.2ms)[0m  SELECT "usuarios".* FROM "usuarios"
+  Rendered usuarios/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 51ms (Views: 49.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 15:10:04 -0200
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2015-11-26 15:10:04 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 15:10:04 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 15:10:04 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 15:10:04 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 15:10:04 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 15:10:04 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 15:10:04 -0200
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2015-11-26 15:10:04 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 15:10:04 -0200
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 15:10:28 -0200
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (0.2ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"[0m
+  Rendered usuarios/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 48ms (Views: 46.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 15:10:28 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 15:10:28 -0200
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2015-11-26 15:10:28 -0200
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 15:10:28 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 15:10:28 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 15:10:28 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 15:10:28 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 15:10:28 -0200
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2015-11-26 15:10:28 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 15:10:28 -0200
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 15:10:29 -0200
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios"
+  Rendered usuarios/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 50ms (Views: 49.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 15:10:29 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 15:10:29 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 15:10:29 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 15:10:29 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 15:10:29 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 15:10:29 -0200
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2015-11-26 15:10:29 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 15:10:29 -0200
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2015-11-26 15:10:29 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 15:10:29 -0200
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 15:10:29 -0200
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (0.1ms)[0m  [1mSELECT "usuarios".* FROM "usuarios"[0m
+  Rendered usuarios/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 40ms (Views: 39.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 15:10:29 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 15:10:29 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 15:10:29 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 15:10:29 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 15:10:29 -0200
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2015-11-26 15:10:29 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 15:10:29 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 15:10:29 -0200
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2015-11-26 15:10:29 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 15:10:29 -0200
+
+
+Started GET "/usuarios" for 127.0.0.1 at 2015-11-26 15:10:30 -0200
+Processing by UsuariosController#index as HTML
+  [1m[35mUsuario Load (0.1ms)[0m  SELECT "usuarios".* FROM "usuarios"
+  Rendered usuarios/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 46ms (Views: 45.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/produtos.css?body=1" for 127.0.0.1 at 2015-11-26 15:10:30 -0200
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2015-11-26 15:10:30 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-11-26 15:10:30 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-11-26 15:10:30 -0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-11-26 15:10:30 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-11-26 15:10:30 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-11-26 15:10:30 -0200
+
+
+Started GET "/assets/produtos.js?body=1" for 127.0.0.1 at 2015-11-26 15:10:30 -0200
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2015-11-26 15:10:30 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-11-26 15:10:30 -0200
