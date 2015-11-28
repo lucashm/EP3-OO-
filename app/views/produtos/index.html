@@ -1,37 +1,17 @@
 <html>
+<%= nav_bar brand: "Loja de Camisetas", brand_link: root_url %>
 <body>
-<table>
+<table class="table table-bordered">
     <thead>
         <tr>
             <th>Nome</th>
             <th>Descrição</th>
             <th>Preço</th>
-            <th>Quantidade</th>            
+            <th>Quantidade</th>
         </tr>
     </thead>
     <tbody>
         <% @produtos_por_nome.each do |produto| %>
-        <tr>
-            <td><%= produto.nome %></%></td>
-            <td><%= produto.descricao %></%></td>
-            <td><%= produto.preco %></%></td>
-            <td><%= produto.quantidade %></%></td>
-        </tr>
-        <% end %>
-    </tbody>
-</table>
-
-<table>
-    <thead>
-        <tr>
-            <th>Nome</th>
-            <th>Descrição</th>
-            <th>Preço</th>
-            <th>Quantidade</th>            
-        </tr>
-    </thead>
-    <tbody>
-        <% @produtos_por_preco.each do |produto| %>
         <tr>
             <td><%= produto.nome %></%></td>
             <td><%= produto.descricao %></%></td>
