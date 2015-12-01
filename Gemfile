@@ -28,6 +28,8 @@ gem 'spring',        group: :development
 
 # Bootstrap model sets
 gem 'twitter-bootstrap-rails'
+# bootstrap-sass
+gem 'bootstrap-sass'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
