@@ -6,7 +6,6 @@ before_save { self.usuario = usuario.downcase }
         uniqueness: { case_sensitive: false }
 
 
-
+        has_secure_password
   validates :password, presence: true, length: {maximum: 255, minimum: 6}
-  has_secure_password
 end
