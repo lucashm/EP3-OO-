@@ -1,22 +1,12 @@
-<%= nav_bar brand: "Loja de Camisetas ", brand_link: root_url %>
-<h1>Bem vindo!</h1>
+<div class="center jumbotron">
+  <h1>Loja de camisetas</h1>
 
-<table>
-  <thead>
-    <tr>
+  <h2>
+    Seja bem vindo!
+  </h2>
 
-    </tr>
-  </thead>
+  <%= link_to "Registrar-se!", signup_path, class: "btn btn-lg btn-primary" %>
+</div>
 
-  <tbody>
-
-  </tbody>
-</table>
-
-<br>
-  <%= link_to 'Cadastrar', new_usuario_path %>
-
-
-  <div class="form-group">
-
-  </div>
+<%= link_to image_tag("rails.png", alt: "Rails logo"),
+            'http://rubyonrails.org/' %>
