@@ -1,9 +1,11 @@
-<div class="center jumbotron">
-  <h1>Loja de camisetas</h1>
+<% provide(:title, 'All usuarios') %>
+<h1>Todos os usuários</h1>
 
-  <h2>
-    Seja bem vindo!
-  </h2>
+<ul class="usuarios">
+  <% @usuarios.each do |usuario| %>
+    <li>
 
-  <%= link_to "Registrar-se!", signup_path, class: "btn btn-lg btn-primary" %>
-</div>
+      <%= link_to usuario.usuario, usuario %>
+    </li>
+  <% end %>
+</ul>

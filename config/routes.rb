@@ -10,13 +10,14 @@ Rails.application.routes.draw do
     get    'login'   => 'sessions#new'
     post   'login'   => 'sessions#create'
     delete 'logout'  => 'sessions#destroy'
-    get 'home' => 'usuarios#index'
+    resources :usuarios
+
+
     post "/produtos" => "produtos#create"
 
-  resources :usuarios
     get "produtos" => "produtos#index"
       get '/produtos/new' => 'produtos#new'
-    root "usuarios#index"
+    root "usuarios#home"
     post "/produtos" => "produtos#create"
 
 end

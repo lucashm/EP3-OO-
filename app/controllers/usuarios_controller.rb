@@ -1,6 +1,7 @@
 class UsuariosController < ApplicationController
   before_action :set_usuario, only: [:show, :edit, :update, :destroy]
-
+  
+  before_action :correct_user,   only: [:edit, :update]
   # GET /usuarios
   # GET /usuarios.json
   def index
@@ -19,7 +20,8 @@ class UsuariosController < ApplicationController
 
   # GET /usuarios/1/edit
   def edit
-  end
+      @user = Usuario.find(params[:id])
+    end
 
   # POST /usuarios
   # POST /usuarios.json
@@ -28,7 +30,9 @@ class UsuariosController < ApplicationController
 
     respond_to do |format|
       if @usuario.save
-        format.html { redirect_to @usuario, notice: 'Usuario was successfully created.' }
+        log_in @usuario
+        flash.now[:success] = "Usuário criado!"
+        redirect_to @usuario
         format.json { render :show, status: :created, location: @usuario }
       else
         format.html { render :new }
