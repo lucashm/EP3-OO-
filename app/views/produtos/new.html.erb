@@ -1,21 +1,25 @@
 <html>
 <body>
-   <%= form_for Produto.new do |f| %>
+    <%= nav_bar brand: "Adição de produtos", brand_link: root_url %>
+<%= form_for Produto.new do |f| %>
 
-Nome
-<%= f.text_field :nome %><br/>    
+<%= f.label :nome %>
+<%= f.text_field :nome, class: "form-control" %><br/>
 
-Descrição
-<%= f.text_area :descricao %><br/>     
+<%= f.label :descricao %>
+<%= f.text_area :descricao, class: "form-control", rows: 4 %><br/>
 
-Quantidade
-    <%= f.number_field :quantidade, step:1 %><br/>    
+<%= f.label :quantidade %>
+<%= f.number_field :quantidade, step: 1, class: "form-control" %><br/>
 
-Preço
-<%= f.number_field :preco %><br/>   
-    <%= f.submit "adicionar o produto" %>    
+<%= f.label :preco %>
+<%= f.number_field :preco, class: "form-control" %><br/>
+
+<%= f.submit "Criar o produto", class: "btn btn-primary" %>
 
 <% end %>
+
+
     
         
     
