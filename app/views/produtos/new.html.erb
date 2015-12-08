@@ -1,18 +1,21 @@
 <html>
 <body>
-    <form>
-    
-    
-    Nome<input type="text" name="nome"/><br/> 
-    Descrição  <textarea name ="descricao"></textarea><br/> 
-    Quantidade <input type="number" name="quantidade"/><br/>
-    Preço <input type="number" name="preco" step="0.01"/><br/>
-        
-    <button type="submit">Criar</button>  
-                      
-                      
-                      
-    
+   <%= form_for Produto.new do |f| %>
+
+Nome
+<%= f.text_field :nome %><br/>    
+
+Descrição
+<%= f.text_area :descricao %><br/>     
+
+Quantidade
+    <%= f.number_field :quantidade, step:1 %><br/>    
+
+Preço
+<%= f.number_field :preco %><br/>   
+    <%= f.submit "adicionar o produto" %>    
+
+<% end %>
     
         
     
