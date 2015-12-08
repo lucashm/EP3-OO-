@@ -1,0 +1,1367 @@
+  [1m[36m (127.6ms)[0m  [1mCREATE TABLE "produtos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "descricao" text, "quantidade" integer, "preco" decimal, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (75.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (88.3ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (60.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151120044743')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (77.4ms)[0m  [1mCREATE TABLE "produtos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "descricao" text, "quantidade" integer, "preco" decimal, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (99.8ms)[0m  CREATE TABLE "usuarios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "usuario" varchar(255), "senha" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (96.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (99.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (74.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20151126162827')[0m
+  [1m[35m (66.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151120044743')
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (123.5ms)[0m  [1mCREATE TABLE "produtos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "descricao" text, "quantidade" integer, "preco" decimal, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (121.6ms)[0m  CREATE TABLE "usuarios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "usuario" varchar(255), "senha" varchar(255), "created_at" datetime, "updated_at" datetime, "password_digest" varchar(255)) 
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (75.3ms)[0m  CREATE UNIQUE INDEX "index_usuarios_on_usuario" ON "usuarios" ("usuario")
+  [1m[36m (81.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (100.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (77.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151203000735')
+  [1m[36m (77.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20151202235401')[0m
+  [1m[35m (77.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151120044743')
+  [1m[36m (77.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20151126162827')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "produtos"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 00:26:12', '2015-12-03 00:26:12', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 00:26:12', '2015-12-03 00:26:12', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "usuarios"[0m
+  [1m[35m (204.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------
+UsuariosControllerTest: test_should_create_usuario
+--------------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+---------------------------------------------------
+UsuariosControllerTest: test_should_destroy_usuario
+---------------------------------------------------
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+--------------------------------------------
+UsuariosControllerTest: test_should_get_edit
+--------------------------------------------
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+---------------------------------------------
+UsuariosControllerTest: test_should_get_index
+---------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-------------------------------------------
+UsuariosControllerTest: test_should_get_new
+-------------------------------------------
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+------------------------------------------------
+UsuariosControllerTest: test_should_show_usuario
+------------------------------------------------
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+--------------------------------------------------
+UsuariosControllerTest: test_should_update_usuario
+--------------------------------------------------
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-------------------------------------------
+SessionsControllerTest: test_should_get_new
+-------------------------------------------
+Processing by SessionsController#new as HTML
+Completed 500 Internal Server Error in 1840ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "produtos"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 00:27:05', '2015-12-03 00:27:05', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 00:27:05', '2015-12-03 00:27:05', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "usuarios"
+  [1m[36m (93.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+-------------------------------------------
+SessionsControllerTest: test_should_get_new
+-------------------------------------------
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (8.7ms)
+Completed 500 Internal Server Error in 1567ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+--------------------------------------------------
+UsuariosControllerTest: test_should_create_usuario
+--------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+---------------------------------------------------
+UsuariosControllerTest: test_should_destroy_usuario
+---------------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+--------------------------------------------
+UsuariosControllerTest: test_should_get_edit
+--------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+---------------------------------------------
+UsuariosControllerTest: test_should_get_index
+---------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------
+UsuariosControllerTest: test_should_get_new
+-------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+------------------------------------------------
+UsuariosControllerTest: test_should_show_usuario
+------------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+--------------------------------------------------
+UsuariosControllerTest: test_should_update_usuario
+--------------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "produtos"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 00:33:17', '2015-12-03 00:33:17', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 00:33:17', '2015-12-03 00:33:17', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "usuarios"
+  [1m[36m (90.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+--------------------------------------------------
+UsuariosControllerTest: test_should_create_usuario
+--------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+---------------------------------------------------
+UsuariosControllerTest: test_should_destroy_usuario
+---------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+--------------------------------------------
+UsuariosControllerTest: test_should_get_edit
+--------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+---------------------------------------------
+UsuariosControllerTest: test_should_get_index
+---------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+-------------------------------------------
+UsuariosControllerTest: test_should_get_new
+-------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+------------------------------------------------
+UsuariosControllerTest: test_should_show_usuario
+------------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+--------------------------------------------------
+UsuariosControllerTest: test_should_update_usuario
+--------------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-------------------------------------------
+SessionsControllerTest: test_should_get_new
+-------------------------------------------
+Processing by SessionsController#new as HTML
+Completed 500 Internal Server Error in 1638ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------
+UsuarioTest: test_email_should_not_be_too_long
+----------------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+---------------------------------------------
+UsuarioTest: test_name_should_not_be_too_long
+---------------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('aaaaaaaaaaaaaaa') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-----------------------------------------
+UsuarioTest: test_senha_should_be_present
+-----------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------
+UsuarioTest: test_senha_should_be_present_(nonblank)
+----------------------------------------------------
+  [1m[35mUsuario Exists (0.4ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+----------------------------------------------------
+UsuarioTest: test_senha_should_have_a_minimum_length
+----------------------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+---------------------------------
+UsuarioTest: test_should_be_valid
+---------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------
+UsuarioTest: test_usuario_should_be_present
+-------------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('     ') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-------------------------------------------
+UsuarioTest: test_usuarios_should_be_unique
+-------------------------------------------
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('EXAMPLE') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "produtos"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 00:36:46', '2015-12-03 00:36:46', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 00:36:46', '2015-12-03 00:36:46', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "usuarios"
+  [1m[36m (92.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------
+UsuarioTest: test_email_should_not_be_too_long
+----------------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+---------------------------------------------
+UsuarioTest: test_name_should_not_be_too_long
+---------------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('aaaaaaaaaaaaaaa') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-----------------------------------------
+UsuarioTest: test_senha_should_be_present
+-----------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------
+UsuarioTest: test_senha_should_be_present_(nonblank)
+----------------------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+----------------------------------------------------
+UsuarioTest: test_senha_should_have_a_minimum_length
+----------------------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+---------------------------------
+UsuarioTest: test_should_be_valid
+---------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------
+UsuarioTest: test_usuario_should_be_present
+-------------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('     ') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-------------------------------------------
+UsuarioTest: test_usuarios_should_be_unique
+-------------------------------------------
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('EXAMPLE') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "produtos"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 00:40:22', '2015-12-03 00:40:22', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 00:40:22', '2015-12-03 00:40:22', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "usuarios"
+  [1m[36m (91.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------
+UsuarioTest: test_email_should_not_be_too_long
+----------------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+---------------------------------------------
+UsuarioTest: test_name_should_not_be_too_long
+---------------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('aaaaaaaaaaaaaaa') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-----------------------------------------
+UsuarioTest: test_senha_should_be_present
+-----------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------
+UsuarioTest: test_senha_should_be_present_(nonblank)
+----------------------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+----------------------------------------------------
+UsuarioTest: test_senha_should_have_a_minimum_length
+----------------------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+---------------------------------
+UsuarioTest: test_should_be_valid
+---------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------
+UsuarioTest: test_usuario_should_be_present
+-------------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('     ') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-------------------------------------------
+UsuarioTest: test_usuarios_should_be_unique
+-------------------------------------------
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('EXAMPLE') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "produtos"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 00:41:20', '2015-12-03 00:41:20', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 00:41:20', '2015-12-03 00:41:20', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "usuarios"
+  [1m[36m (94.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------
+UsuarioTest: test_email_should_not_be_too_long
+----------------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+---------------------------------------------
+UsuarioTest: test_name_should_not_be_too_long
+---------------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('aaaaaaaaaaaaaaa') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-----------------------------------------
+UsuarioTest: test_senha_should_be_present
+-----------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------
+UsuarioTest: test_senha_should_be_present_(nonblank)
+----------------------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+----------------------------------------------------
+UsuarioTest: test_senha_should_have_a_minimum_length
+----------------------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-------------------------------------------
+UsuarioTest: test_usuario_should_be_present
+-------------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('     ') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------
+UsuarioTest: test_usuarios_should_be_unique
+-------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('EXAMPLE') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "produtos"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 00:42:24', '2015-12-03 00:42:24', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 00:42:24', '2015-12-03 00:42:24', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "usuarios"
+  [1m[36m (93.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------
+UsuarioTest: test_email_should_not_be_too_long
+----------------------------------------------
+  [1m[36mUsuario Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+---------------------------------------------
+UsuarioTest: test_name_should_not_be_too_long
+---------------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('aaaaaaaaaaaaaaa') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-----------------------------------------
+UsuarioTest: test_senha_should_be_present
+-----------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------
+UsuarioTest: test_senha_should_be_present_(nonblank)
+----------------------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------
+UsuarioTest: test_usuario_should_be_present
+-------------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('     ') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-------------------------------------------
+UsuarioTest: test_usuarios_should_be_unique
+-------------------------------------------
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('EXAMPLE') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "produtos"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 00:42:56', '2015-12-03 00:42:56', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 00:42:56', '2015-12-03 00:42:56', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "usuarios"
+  [1m[36m (96.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------
+UsuarioTest: test_email_should_not_be_too_long
+----------------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+---------------------------------------------
+UsuarioTest: test_name_should_not_be_too_long
+---------------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('aaaaaaaaaaaaaaa') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-----------------------------------------
+UsuarioTest: test_senha_should_be_present
+-----------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------
+UsuarioTest: test_senha_should_be_present_(nonblank)
+----------------------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------
+UsuarioTest: test_usuario_should_be_present
+-------------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('     ') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-------------------------------------------
+UsuarioTest: test_usuarios_should_be_unique
+-------------------------------------------
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('EXAMPLE') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "produtos"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 00:43:29', '2015-12-03 00:43:29', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 00:43:29', '2015-12-03 00:43:29', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "usuarios"
+  [1m[36m (84.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------
+UsuarioTest: test_email_should_not_be_too_long
+----------------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+---------------------------------------------
+UsuarioTest: test_name_should_not_be_too_long
+---------------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('aaaaaaaaaaaaaaa') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-----------------------------------------
+UsuarioTest: test_senha_should_be_present
+-----------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------
+UsuarioTest: test_senha_should_be_present_(nonblank)
+----------------------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------
+UsuarioTest: test_usuario_should_be_present
+-------------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('     ') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-------------------------------------------
+UsuarioTest: test_usuarios_should_be_unique
+-------------------------------------------
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('EXAMPLE') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "produtos"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 00:44:52', '2015-12-03 00:44:52', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 00:44:52', '2015-12-03 00:44:52', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "usuarios"
+  [1m[36m (88.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------
+UsuarioTest: test_email_should_not_be_too_long
+----------------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+---------------------------------------------
+UsuarioTest: test_name_should_not_be_too_long
+---------------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('aaaaaaaaaaaaaaa') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-----------------------------------------
+UsuarioTest: test_senha_should_be_present
+-----------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------
+UsuarioTest: test_senha_should_be_present_(nonblank)
+----------------------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+----------------------------------------------------
+UsuarioTest: test_senha_should_have_a_minimum_length
+----------------------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-------------------------------------------
+UsuarioTest: test_usuario_should_be_present
+-------------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('     ') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------
+UsuarioTest: test_usuarios_should_be_unique
+-------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "password_digest", "senha", "updated_at", "usuario") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2015-12-03 00:44:53.095213"], ["password_digest", "foobar"], ["senha", "foobar"], ["updated_at", "2015-12-03 00:44:53.095213"], ["usuario", "example"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('EXAMPLE') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "produtos"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 00:46:35', '2015-12-03 00:46:35', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 00:46:35', '2015-12-03 00:46:35', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "usuarios"
+  [1m[36m (88.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------
+UsuarioTest: test_email_should_not_be_too_long
+----------------------------------------------
+  [1m[36mUsuario Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+---------------------------------------------
+UsuarioTest: test_name_should_not_be_too_long
+---------------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('aaaaaaaaaaaaaaa') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-----------------------------------------
+UsuarioTest: test_senha_should_be_present
+-----------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------
+UsuarioTest: test_senha_should_be_present_(nonblank)
+----------------------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+----------------------------------------------------
+UsuarioTest: test_senha_should_have_a_minimum_length
+----------------------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-------------------------------------------
+UsuarioTest: test_usuario_should_be_present
+-------------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('     ') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------
+UsuarioTest: test_usuarios_should_be_unique
+-------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "password_digest", "senha", "updated_at", "usuario") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2015-12-03 00:46:35.445214"], ["password_digest", "foobar"], ["senha", "foobar"], ["updated_at", "2015-12-03 00:46:35.445214"], ["usuario", "example"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('EXAMPLE') LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "produtos"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 00:54:29', '2015-12-03 00:54:29', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 00:54:29', '2015-12-03 00:54:29', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "usuarios"
+  [1m[36m (87.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------
+UsuarioTest: test_email_should_not_be_too_long
+----------------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------------
+UsuarioTest: test_senha_should_be_present
+-----------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+----------------------------------------------------
+UsuarioTest: test_senha_should_be_present_(nonblank)
+----------------------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------
+UsuarioTest: test_senha_should_have_a_minimum_length
+----------------------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------
+UsuarioTest: test_usuario_should_be_present
+-------------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('     ') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+------------------------------------------------
+UsuarioTest: test_usuario_should_not_be_too_long
+------------------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('aaaaaaaaaaaaaaa') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------
+UsuarioTest: test_usuarios_should_be_unique
+-------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "password_digest", "senha", "updated_at", "usuario") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2015-12-03 00:54:29.236345"], ["password_digest", "foobar"], ["senha", "foobar"], ["updated_at", "2015-12-03 00:54:29.236345"], ["usuario", "example"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('EXAMPLE') LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "produtos"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 00:55:08', '2015-12-03 00:55:08', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 00:55:08', '2015-12-03 00:55:08', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "usuarios"
+  [1m[36m (83.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------
+UsuarioTest: test_email_should_not_be_too_long
+----------------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------------
+UsuarioTest: test_senha_should_be_present
+-----------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+----------------------------------------------------
+UsuarioTest: test_senha_should_be_present_(nonblank)
+----------------------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------
+UsuarioTest: test_senha_should_have_a_minimum_length
+----------------------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------
+UsuarioTest: test_usuario_should_be_present
+-------------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('     ') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+------------------------------------------------
+UsuarioTest: test_usuario_should_not_be_too_long
+------------------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('aaaaaaaaaaaaaaa') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------
+UsuarioTest: test_usuarios_should_be_unique
+-------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "password_digest", "senha", "updated_at", "usuario") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2015-12-03 00:55:08.956105"], ["password_digest", "foobar"], ["senha", "foobar"], ["updated_at", "2015-12-03 00:55:08.956105"], ["usuario", "example"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('EXAMPLE') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "produtos"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 00:57:04', '2015-12-03 00:57:04', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 00:57:04', '2015-12-03 00:57:04', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "usuarios"
+  [1m[36m (96.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------
+UsuarioTest: test_email_should_not_be_too_long
+----------------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------------
+UsuarioTest: test_senha_should_be_present
+-----------------------------------------
+  [1m[35mUsuario Exists (0.2ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+----------------------------------------------------
+UsuarioTest: test_senha_should_be_present_(nonblank)
+----------------------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------
+UsuarioTest: test_senha_should_have_a_minimum_length
+----------------------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------
+UsuarioTest: test_usuario_should_be_present
+-------------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('     ') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+------------------------------------------------
+UsuarioTest: test_usuario_should_not_be_too_long
+------------------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('aaaaaaaaaaaaaaaa') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------
+UsuarioTest: test_usuarios_should_be_unique
+-------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "password_digest", "senha", "updated_at", "usuario") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2015-12-03 00:57:04.904762"], ["password_digest", "foobar"], ["senha", "foobar"], ["updated_at", "2015-12-03 00:57:04.904762"], ["usuario", "example"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUsuario Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('EXAMPLE') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "produtos"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 00:59:19', '2015-12-03 00:59:19', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 00:59:19', '2015-12-03 00:59:19', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "usuarios"
+  [1m[36m (88.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------
+UsuarioTest: test_email_should_not_be_too_long
+----------------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------------
+UsuarioTest: test_senha_should_be_present
+-----------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------------
+UsuarioTest: test_senha_should_be_present_(nonblank)
+----------------------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------
+UsuarioTest: test_senha_should_have_a_minimum_length
+----------------------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-------------------------------------------
+UsuarioTest: test_usuario_should_be_present
+-------------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('     ') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+------------------------------------------------
+UsuarioTest: test_usuario_should_not_be_too_long
+------------------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('aaaaaaaaaaaaaaaa') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------
+UsuarioTest: test_usuarios_should_be_unique
+-------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "password_digest", "senha", "updated_at", "usuario") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2015-12-03 00:59:19.978883"], ["password_digest", "foobar"], ["senha", "foobar"], ["updated_at", "2015-12-03 00:59:19.978883"], ["usuario", "example"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('EXAMPLE') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "produtos"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 01:07:50', '2015-12-03 01:07:50', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 01:07:50', '2015-12-03 01:07:50', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "usuarios"
+  [1m[36m (87.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------
+UsuarioTest: test_email_should_not_be_too_long
+----------------------------------------------
+  [1m[36mUsuario Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------------
+UsuarioTest: test_senha_should_be_present
+-----------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------------
+UsuarioTest: test_senha_should_be_present_(nonblank)
+----------------------------------------------------
+  [1m[36mUsuario Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------
+UsuarioTest: test_senha_should_have_a_minimum_length
+----------------------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------
+UsuarioTest: test_usuario_should_be_present
+-------------------------------------------
+  [1m[36mUsuario Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('     ') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+------------------------------------------------
+UsuarioTest: test_usuario_should_not_be_too_long
+------------------------------------------------
+  [1m[35mUsuario Exists (0.2ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('aaaaaaaaaaaaaaaa') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-------------------------------------------
+UsuarioTest: test_usuarios_should_be_unique
+-------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "password_digest", "senha", "updated_at", "usuario") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2015-12-03 01:07:50.897214"], ["password_digest", "foobar"], ["senha", "foobar"], ["updated_at", "2015-12-03 01:07:50.897214"], ["usuario", "example"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUsuario Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('EXAMPLE') LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (95.7ms)[0m  [1mCREATE TABLE "produtos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "descricao" text, "quantidade" integer, "preco" decimal, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (77.1ms)[0m  CREATE TABLE "usuarios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "usuario" varchar(255), "senha" varchar(255), "created_at" datetime, "updated_at" datetime, "senha_digest" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (97.6ms)[0m  CREATE UNIQUE INDEX "index_usuarios_on_usuario" ON "usuarios" ("usuario")
+  [1m[36m (115.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (122.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (50.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151203011820')
+  [1m[36m (88.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20151202235401')[0m
+  [1m[35m (88.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151120044743')
+  [1m[36m (66.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20151126162827')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "produtos"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 01:19:48', '2015-12-03 01:19:48', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 01:19:48', '2015-12-03 01:19:48', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "usuarios"
+  [1m[36m (89.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------
+UsuarioTest: test_email_should_not_be_too_long
+----------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-----------------------------------------
+UsuarioTest: test_senha_should_be_present
+-----------------------------------------
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+----------------------------------------------------
+UsuarioTest: test_senha_should_be_present_(nonblank)
+----------------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+----------------------------------------------------
+UsuarioTest: test_senha_should_have_a_minimum_length
+----------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------
+UsuarioTest: test_usuario_should_be_present
+-------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+------------------------------------------------
+UsuarioTest: test_usuario_should_not_be_too_long
+------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------
+UsuarioTest: test_usuarios_should_be_unique
+-------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "produtos"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 01:20:35', '2015-12-03 01:20:35', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 01:20:35', '2015-12-03 01:20:35', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "usuarios"
+  [1m[36m (54.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------
+UsuarioTest: test_email_should_not_be_too_long
+----------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-----------------------------------------
+UsuarioTest: test_senha_should_be_present
+-----------------------------------------
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------------
+UsuarioTest: test_senha_should_be_present_(nonblank)
+----------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+----------------------------------------------------
+UsuarioTest: test_senha_should_have_a_minimum_length
+----------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------
+UsuarioTest: test_usuario_should_be_present
+-------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+------------------------------------------------
+UsuarioTest: test_usuario_should_not_be_too_long
+------------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------
+UsuarioTest: test_usuarios_should_be_unique
+-------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "produtos"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 01:21:01', '2015-12-03 01:21:01', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 01:21:01', '2015-12-03 01:21:01', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "usuarios"
+  [1m[36m (87.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------
+UsuarioTest: test_email_should_not_be_too_long
+----------------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------------
+UsuarioTest: test_senha_should_be_present
+-----------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+----------------------------------------------------
+UsuarioTest: test_senha_should_be_present_(nonblank)
+----------------------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------
+UsuarioTest: test_senha_should_have_a_minimum_length
+----------------------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------
+UsuarioTest: test_usuario_should_be_present
+-------------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('     ') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+------------------------------------------------
+UsuarioTest: test_usuario_should_not_be_too_long
+------------------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('aaaaaaaaaaaaaaaa') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------
+UsuarioTest: test_usuarios_should_be_unique
+-------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (2.1ms)[0m  [1mDELETE FROM "produtos"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 01:21:44', '2015-12-03 01:21:44', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 01:21:44', '2015-12-03 01:21:44', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "usuarios"
+  [1m[36m (66.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------
+UsuarioTest: test_email_should_not_be_too_long
+----------------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-----------------------------------------
+UsuarioTest: test_senha_should_be_present
+-----------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+----------------------------------------------------
+UsuarioTest: test_senha_should_be_present_(nonblank)
+----------------------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+----------------------------------------------------
+UsuarioTest: test_senha_should_have_a_minimum_length
+----------------------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------
+UsuarioTest: test_usuario_should_be_present
+-------------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('     ') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+------------------------------------------------
+UsuarioTest: test_usuario_should_not_be_too_long
+------------------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('aaaaaaaaaaaaaaaa') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+-------------------------------------------
+UsuarioTest: test_usuarios_should_be_unique
+-------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (94.0ms)[0m  [1mCREATE TABLE "produtos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar(255), "descricao" text, "quantidade" integer, "preco" decimal, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (99.2ms)[0m  CREATE TABLE "usuarios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "usuario" varchar(255), "password" varchar(255), "created_at" datetime, "updated_at" datetime, "password_digest" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (107.1ms)[0m  CREATE UNIQUE INDEX "index_usuarios_on_usuario" ON "usuarios" ("usuario")
+  [1m[36m (117.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (133.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (108.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151203012410')
+  [1m[36m (110.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20151202235401')[0m
+  [1m[35m (110.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151120044743')
+  [1m[36m (110.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20151126162827')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "produtos"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 01:28:41', '2015-12-03 01:28:41', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 01:28:41', '2015-12-03 01:28:41', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "usuarios"
+  [1m[36m (77.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------
+UsuarioTest: test_email_should_not_be_too_long
+----------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-----------------------------------------
+UsuarioTest: test_senha_should_be_present
+-----------------------------------------
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+----------------------------------------------------
+UsuarioTest: test_senha_should_be_present_(nonblank)
+----------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------------
+UsuarioTest: test_senha_should_have_a_minimum_length
+----------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------
+UsuarioTest: test_usuario_should_be_present
+-------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+------------------------------------------------
+UsuarioTest: test_usuario_should_not_be_too_long
+------------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------
+UsuarioTest: test_usuarios_should_be_unique
+-------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.4ms)[0m  [1mDELETE FROM "produtos"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 01:29:32', '2015-12-03 01:29:32', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 01:29:32', '2015-12-03 01:29:32', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "usuarios"
+  [1m[36m (88.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------
+UsuarioTest: test_email_should_not_be_too_long
+----------------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+--------------------------------------------
+UsuarioTest: test_password_should_be_present
+--------------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------------------
+UsuarioTest: test_password_should_be_present_(nonblank)
+-------------------------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------
+UsuarioTest: test_password_should_have_a_minimum_length
+-------------------------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------
+UsuarioTest: test_usuario_should_be_present
+-------------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('     ') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+------------------------------------------------
+UsuarioTest: test_usuario_should_not_be_too_long
+------------------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('aaaaaaaaaaaaaaaa') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------
+UsuarioTest: test_usuarios_should_be_unique
+-------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "password_digest", "updated_at", "usuario") VALUES (?, ?, ?, ?)[0m  [["created_at", "2015-12-03 01:29:32.317501"], ["password_digest", "$2a$04$xVYSj6z/hk7FsJvPDBUFJ..Ykd6rt7/dNd7CpiGGniNgMidhA0fYm"], ["updated_at", "2015-12-03 01:29:32.317501"], ["usuario", "example"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('EXAMPLE') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "produtos"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 01:30:43', '2015-12-03 01:30:43', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 01:30:43', '2015-12-03 01:30:43', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "usuarios"
+  [1m[36m (95.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------
+UsuarioTest: test_email_should_not_be_too_long
+----------------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+--------------------------------------------
+UsuarioTest: test_password_should_be_present
+--------------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------------------
+UsuarioTest: test_password_should_be_present_(nonblank)
+-------------------------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------
+UsuarioTest: test_password_should_have_a_minimum_length
+-------------------------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------
+UsuarioTest: test_usuario_should_be_present
+-------------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('     ') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+------------------------------------------------
+UsuarioTest: test_usuario_should_not_be_too_long
+------------------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('aaaaaaaaaaaaaaaa') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------
+UsuarioTest: test_usuarios_should_be_unique
+-------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "password_digest", "updated_at", "usuario") VALUES (?, ?, ?, ?)[0m  [["created_at", "2015-12-03 01:30:43.958983"], ["password_digest", "$2a$04$n0K1uDbx53Ljib9IkxaY0OerTpiXLTK89srSCoWOrZ9USl2bsGftS"], ["updated_at", "2015-12-03 01:30:43.958983"], ["usuario", "example"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('EXAMPLE') LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.8ms)[0m  [1mDELETE FROM "produtos"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 01:31:07', '2015-12-03 01:31:07', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 01:31:07', '2015-12-03 01:31:07', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "usuarios"
+  [1m[36m (94.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------
+UsuarioTest: test_email_should_not_be_too_long
+----------------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+--------------------------------------------
+UsuarioTest: test_password_should_be_present
+--------------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------------------
+UsuarioTest: test_password_should_be_present_(nonblank)
+-------------------------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------
+UsuarioTest: test_password_should_have_a_minimum_length
+-------------------------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------
+UsuarioTest: test_usuario_should_be_present
+-------------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('     ') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+------------------------------------------------
+UsuarioTest: test_usuario_should_not_be_too_long
+------------------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('aaaaaaaaaaaaaaaa') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------
+UsuarioTest: test_usuarios_should_be_unique
+-------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "usuarios" ("created_at", "password_digest", "updated_at", "usuario") VALUES (?, ?, ?, ?)[0m  [["created_at", "2015-12-03 01:31:07.683107"], ["password_digest", "$2a$04$FaQA81djJf9W8pRaOtBQ9OJEO6MSUsGMODbSzbT/UKTe7IC/DmMu6"], ["updated_at", "2015-12-03 01:31:07.683107"], ["usuario", "example"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('EXAMPLE') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "produtos"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 01:32:02', '2015-12-03 01:32:02', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "produtos" ("nome", "descricao", "quantidade", "preco", "created_at", "updated_at", "id") VALUES ('MyString', 'MyText', 1, 9.99, '2015-12-03 01:32:02', '2015-12-03 01:32:02', 298486374)[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "usuarios"
+  [1m[36m (106.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------
+UsuarioTest: test_email_should_not_be_too_long
+----------------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-------------------------------------------------------
+UsuarioTest: test_password_should_be_present_(nonblank)
+-------------------------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------------------
+UsuarioTest: test_password_should_have_a_minimum_length
+-------------------------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+-------------------------------------------
+UsuarioTest: test_usuario_should_be_present
+-------------------------------------------
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('     ') LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+------------------------------------------------
+UsuarioTest: test_usuario_should_not_be_too_long
+------------------------------------------------
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('aaaaaaaaaaaaaaaa') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+-------------------------------------------
+UsuarioTest: test_usuarios_should_be_unique
+-------------------------------------------
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUsuario Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('Example') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "usuarios" ("created_at", "password_digest", "updated_at", "usuario") VALUES (?, ?, ?, ?)  [["created_at", "2015-12-03 01:32:02.203758"], ["password_digest", "$2a$04$yCAHTVt2VXLU3OAVbozcAuzrIma/vN0cB2J5osgg2AqYJqWUuqtoa"], ["updated_at", "2015-12-03 01:32:02.203758"], ["usuario", "example"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUsuario Exists (0.1ms)[0m  SELECT  1 AS one FROM "usuarios"  WHERE LOWER("usuarios"."usuario") = LOWER('EXAMPLE') LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
