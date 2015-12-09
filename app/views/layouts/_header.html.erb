@@ -1,6 +1,10 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
     <nav>
+      <ul class="nav navbar-nav navbar-left">
+
+          <li><%= link_to "Loja de Camisetas", root_path%></li>
+      </ul>
       <ul class="nav navbar-nav navbar-right">
       <% if logged_in? %>
       <li><%= link_to "Produtos", produtos_path %></li>
@@ -8,7 +12,7 @@
         <li><%= link_to "Home", root_path %></li>
 
         <% end %>
-         
+
         <% if logged_in? %>
           <li><%= link_to "Usuarios", usuarios_path %></li>
           <li class="dropdown">

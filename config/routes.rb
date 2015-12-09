@@ -13,11 +13,12 @@ Rails.application.routes.draw do
     resources :usuarios
 
 
-    post "/produtos" => "produtos#create"
+
 
     get "produtos" => "produtos#index"
       get '/produtos/new' => 'produtos#new'
     root "usuarios#home"
-    post "/produtos" => "produtos#create"
+  
+   resources :produtos
 
 end

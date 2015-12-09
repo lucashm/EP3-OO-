@@ -1,12 +1,22 @@
 class ProdutosController < ApplicationController
 	def index
-        @produtos_por_nome = Produto.order(:nome).limit 5
-        @produtos_por_preco = Produto.order(:preco).limit 2
+        @produto = Produto.all
     end
-    
-    def create
-    valores = params.require(:produto).permit :nome, :preco, :descricao, :quantidade
-    produto = Produto.create
+		def new
+	    @produto = Produto.new
+	  end
 
-    end
+		def create
+  @produto = Produto.new(produto_params)
+	if @produto.save
+		flash.now[:success] = "Produto criado!"
+		redirect_to produtos_path
+	else
+		render 'new'
+	end
+	end
+
+	def produto_params
+		params.require(:produto).permit(:nome, :descricao, :preco, :quantidade)
+	end
 end

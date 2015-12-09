@@ -4,6 +4,9 @@
   <h2>
     Seja bem vindo!
   </h2>
-
+  <% if logged_in? %>
+  <% else %>
   <%= link_to "Registrar-se!", signup_path, class: "btn btn-lg btn-primary" %>
+
+  <% end %>
 </div>

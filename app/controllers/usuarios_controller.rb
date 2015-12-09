@@ -1,6 +1,6 @@
 class UsuariosController < ApplicationController
   before_action :set_usuario, only: [:show, :edit, :update, :destroy]
-  
+
   before_action :correct_user,   only: [:edit, :update]
   # GET /usuarios
   # GET /usuarios.json
@@ -20,38 +20,31 @@ class UsuariosController < ApplicationController
 
   # GET /usuarios/1/edit
   def edit
-      @user = Usuario.find(params[:id])
+      @usuario = Usuario.find(params[:id])
     end
 
   # POST /usuarios
   # POST /usuarios.json
   def create
     @usuario = Usuario.new(usuario_params)
-
-    respond_to do |format|
       if @usuario.save
         log_in @usuario
         flash.now[:success] = "Usuário criado!"
         redirect_to @usuario
-        format.json { render :show, status: :created, location: @usuario }
       else
-        format.html { render :new }
-        format.json { render json: @usuario.errors, status: :unprocessable_entity }
+        render 'new'
       end
-    end
   end
 
   # PATCH/PUT /usuarios/1
   # PATCH/PUT /usuarios/1.json
   def update
-    respond_to do |format|
-      if @usuario.update(usuario_params)
-        format.html { redirect_to @usuario, notice: 'Usuario was successfully updated.' }
-        format.json { render :show, status: :ok, location: @usuario }
-      else
-        format.html { render :edit }
-        format.json { render json: @usuario.errors, status: :unprocessable_entity }
-      end
+    @usuario = Usuario.find(params[:id])
+    if @usuario.update_attributes(usuario_params)
+      flash[:success] = "Profile updated"
+      redirect_to @usuario
+    else
+      render 'edit'
     end
   end
 
@@ -75,4 +68,9 @@ class UsuariosController < ApplicationController
     def usuario_params
       params.require(:usuario).permit(:usuario, :password, :password_confirmation)
     end
+    def correct_user
+          @usuario = Usuario.find(params[:id])
+          redirect_to(root_url) unless @usuario == current_user
+        end
+
 end

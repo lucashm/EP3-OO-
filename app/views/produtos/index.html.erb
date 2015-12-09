@@ -1,5 +1,4 @@
 <html>
-<%= nav_bar brand: "Loja de Camisetas", brand_link: root_url %>
 <body>
 <table class="table table-bordered">
     <thead>
@@ -11,7 +10,7 @@
         </tr>
     </thead>
     <tbody>
-        <% @produtos_por_nome.each do |produto| %>
+        <% @produto.each do |produto| %>
         <tr>
             <td><%= produto.nome %></%></td>
             <td><%= produto.descricao %></%></td>
@@ -22,4 +21,7 @@
     </tbody>
 </table>
 </body>
+<% if current_user.admin? %>
+<li><%= link_to "Adicionar Produtos", '/produtos/new' %></li>
+<% end %>
 </html>

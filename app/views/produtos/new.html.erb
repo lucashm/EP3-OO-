@@ -1,28 +1,39 @@
+
+<% if current_user.admin? %>
 <html>
 <body>
-    <%= nav_bar brand: "Adição de produtos", brand_link: root_url %>
-<%= form_for Produto.new do |f| %>
+  <div class="row">
+    <div class="col-md-7 col-md-offset-1">
+  <%=form_for(@produto) do |f| %>
 
-<%= f.label :nome %>
-<%= f.text_field :nome, class: "form-control" %><br/>
+  <%= f.label :nome, "Nome" %>
+  <%= f.text_field :nome, class: 'form-control' %>
 
-<%= f.label :descricao %>
-<%= f.text_area :descricao, class: "form-control", rows: 4 %><br/>
+  <%= f.label :descricao, "Descrição" %>
+  <%= f.text_field :descricao, class: 'form-control' %>
+  <%= f.label :quantidade, "Quantidade" %>
+  <%= f.text_field :quantidade, class: 'form-control' %>
 
-<%= f.label :quantidade %>
-<%= f.number_field :quantidade, step: 1, class: "form-control" %><br/>
+  <%= f.label :preco, "Preço" %>
+  <%= f.text_field :preco, class: 'form-control' %>
 
-<%= f.label :preco %>
-<%= f.number_field :preco, class: "form-control" %><br/>
-
-<%= f.submit "Criar o produto", class: "btn btn-primary" %>
+<%= f.submit "Criar produto", class: "btn btn-primary" %>
 
 <% end %>
+</div>
+</div>
+</body>
+<%= link_to 'Retornar', produtos_path %>
+</html>
+<% else %>
 
+<div class="center jumbotron">
+  <h1>Loja de camisetas</h1>
 
-    
-        
-    
-    
-    </form>
-<html>
+  <h2>
+    Opss, se perdeu?
+  </h2>
+
+</div>
+
+<% end %>
