@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   get 'sessions/new'
 
+
+    delete "/produtos/:id" => "produtos#destroy", as: :produto
+
     get 'Produtos'   => 'produtos#index'
     get "/produtos/new" => "produtos#new"
     get    'help'    => 'static_pages#help'
