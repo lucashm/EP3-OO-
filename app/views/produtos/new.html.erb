@@ -35,5 +35,10 @@
   </h2>
 
 </div>
+<div class="form-group">
+    <%= f.label :departamento %>
+    <%= f.collection_select :departamento_id, @departamentos, :id, :nome %>
+
+</div>
 
 <% end %>
