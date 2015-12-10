@@ -1,0 +1,35 @@
+<html>
+<body>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th>Preço</th>
+            <th>Quantidade</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @produto.each do |produto| %>
+        <tr>
+            <td><%= produto.nome %></%></td>
+            <td><%= produto.descricao %></%></td>
+            <td><%= produto.preco %></%></td>
+            <td><%= produto.quantidade %></%>
+              <% if current_user.admin? %>
+            <td><%= button_to "Remover", produto,
+                        method: :delete,
+                        class: "btn btn-danger",
+                        data: { confirm: "Tem certeza que deseja remover?" } %></td>
+
+            </td>
+            <% end %>  
+        </tr>
+        <% end %>
+    </tbody>
+</table>
+</body>
+<% if current_user.admin? %>
+<li><%= link_to "Adicionar Produtos", '/produtos/new' %></li>
+<% end %>
+</html>
