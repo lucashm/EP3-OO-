@@ -19,4 +19,9 @@ class ProdutosController < ApplicationController
 	def produto_params
 		params.require(:produto).permit(:nome, :descricao, :preco, :quantidade)
 	end
+	 def destroy
+    id = params[:id]
+    Produto.destroy id
+    redirect_to root_url
+end
 end
