@@ -1,28 +1,14 @@
-== README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+EP3 Orientação a Objetos - Turma B 2015
+Prof: Renato Sampaio
+Alunos: Lucas Henrique Araújo Malta // 130122050
+        João Ítalo Alves // 150132069
+Tema do Site: Site de camisetas
+A ideia inicial era de montar um site com sistema de Login/Signup e com uma lista de produtos definidas por um master.
+Todo o projeto foi bem estruturado a objetos, e separado no padrão de arquitetura MVC.
+Para tal, foram criadas 3 classes:
+Produtos, que se encarregaria da tabela e da organização/funcionamento geral dos produtos
+Usuários, a classe mais complexa do trabalho. Nela encontramos todas as limitações e definições para criação de um usuário, além do sistema de login/signup
+Sessions, responsável por gerenciar as sessões de login no site, para assim evitar eventuais problemas (login duplo, por exemplo).
+Toda a parte visual foi auxiliada pela gem Bootstrap. Além disso, a gem responsável pela DB é a sqlite3, e também foi utilizado uma gema adicional, a 'b-crypt', responsável pelo encriptamento de senhas no site
+A versão final encontra-se na branch "teste2", no link a seguir:
+https://gitlab.com/joaoitalo/EP3
