@@ -10,5 +10,7 @@ Produtos, que se encarregaria da tabela e da organização/funcionamento geral d
 Usuários, a classe mais complexa do trabalho. Nela encontramos todas as limitações e definições para criação de um usuário, além do sistema de login/signup
 Sessions, responsável por gerenciar as sessões de login no site, para assim evitar eventuais problemas (login duplo, por exemplo).
 Toda a parte visual foi auxiliada pela gem Bootstrap. Além disso, a gem responsável pela DB é a sqlite3, e também foi utilizado uma gema adicional, a 'b-crypt', responsável pelo encriptamento de senhas no site
-A versão final encontra-se na branch "teste2", no link a seguir:
+A versão final encontra-se na branch "teste4", no link a seguir:
 https://gitlab.com/joaoitalo/EP3
+
+*Nota: Tivemos uma certa dificuldade com a ferramenta GIT, todos os commits ficaram divididos entre as branches, e no final não conseguimos dar o merge.
